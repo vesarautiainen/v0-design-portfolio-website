@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const dev = process.argv.includes('dev');
-const repo = 'v0-design-portfolio-website';
+const repo = '';
 
 export default {
 	preprocess: vitePreprocess(),
