@@ -1,11 +1,12 @@
 <script>
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	let mobileMenuOpen = $state(false);
 
 	const navItems = [
-		{ label: 'Work', href: '/projects' },
-		{ label: 'About', href: '/about' }
+		{ label: 'Work', href: 'projects' },
+		{ label: 'About', href: `${base}/about` }
 	];
 
 	function isActive(href) {
