@@ -25,10 +25,10 @@
 					<a href="/" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						Home
 					</a>
-					<a href="/projects" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
+					<a href="projects" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						Projects
 					</a>
-					<a href="/about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
+					<a href="about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						About
 					</a>
 				</div>
