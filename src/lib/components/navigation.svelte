@@ -1,11 +1,12 @@
 <script>
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	let mobileMenuOpen = $state(false);
 
 	const navItems = [
-		{ label: 'Work', href: '/projects' },
-		{ label: 'About', href: '/about' }
+		{ label: 'Work', href: 'projects' },
+		{ label: 'About', href: `about` }
 	];
 
 	function isActive(href) {
@@ -15,7 +16,7 @@
 
 <nav class="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-muted">
 	<div class="px-6 md:px-12 py-4 max-w-6xl mx-auto flex items-center justify-between">
-		<a href="/" class="text-xl font-bold hover:text-muted-foreground transition-colors">Vesa Rautiainen</a>
+		<a href="{base}/" class="text-xl font-bold hover:text-muted-foreground transition-colors">Vesa Rautiainen</a>
 
 		<!-- Desktop menu - hidden on mobile -->
 		<div class="hidden md:flex items-center gap-8">

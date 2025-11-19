@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import ProjectCard from '$lib/components/project-card.svelte';
+	import { base } from '$app/paths';
 
 	let projects = [];
 	let isLoading = true;
@@ -48,7 +49,7 @@
 	{/if}
 
 	<div class="mt-12 text-center">
-		<a href="/projects" class="inline-block px-6 py-2 bg-foreground text-background rounded hover:bg-muted-foreground transition-colors">
+		<a href="{base}/projects" class="inline-block px-6 py-2 bg-foreground text-background rounded hover:bg-muted-foreground transition-colors">
 			View All Projects
 		</a>
 	</div>
