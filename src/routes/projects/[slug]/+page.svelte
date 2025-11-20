@@ -1,12 +1,13 @@
 <script>
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	let project = null;
 	let isLoading = true;
 
 	onMount(async () => {
-		const response = await fetch(`/api/projects/${$page.params.slug}`);
+		const response = await fetch(`${base}/api/projects/${$page.params.slug}`);
 		project = await response.json();
 		isLoading = false;
 	});
