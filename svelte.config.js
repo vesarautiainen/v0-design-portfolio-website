@@ -15,9 +15,9 @@ export default {
 			precompress: false,
 			strict: true
 		}),
-	paths: {
-      base: dev ? '' : `/${repo}`
-	  //base: ''//dev ? '' : `/${repo}`
-    },
+		paths: {
+			//base: process.env.NODE_ENV === 'production' ? `/${repo}` : ''
+			base: ''//dev ? '' : `/${repo}`
+		},
 	}
 };

@@ -1,14 +1,15 @@
 <script>
 	import { onMount } from 'svelte';
-	import ProjectCard from '$lib/components/project-card.svelte';
 	import { base } from '$app/paths';
+	import ProjectCard from '$lib/components/project-card.svelte';
+	
 
 	let projects = [];
 	let isLoading = true;
 
 	onMount(async () => {
-		const response = await fetch('/api/projects');
-		console.log('Fetching projects from:', '/api/projects');
+		const response = await fetch(`${base}/api/projects`);
+		console.log('Fetching projects from:', `${base}/api/projects`);
 		console.log('Response status:', response.status);
 		projects = await response.json();
 		isLoading = false;
