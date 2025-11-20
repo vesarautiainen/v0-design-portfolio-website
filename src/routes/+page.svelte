@@ -15,7 +15,10 @@
 	// 	projects = await response.json();
 	// 	isLoading = false;
 	// });
+
+	$: featuredProjects = projects.filter(p => p.featured === true);
 </script>
+
 
 <svelte:head>
 	<title>Design Portfolio | Showcasing Creative Design Work</title>
@@ -46,8 +49,10 @@
 		</div>
 	{:else}
 		<div class="grid md:grid-cols-2 gap-8">
-			{#each projects.slice(0, 4) as project (project.id)}
-				<ProjectCard {project} />
+			{#each featuredProjects as project (project.id)}
+				<a href="/projects/{project.slug}" class="group">
+					<ProjectCard {project} />
+				</a>
 			{/each}
 		</div>
 	{/if}
