@@ -53,7 +53,7 @@ git push "$PROD_REMOTE" "$SNAPSHOT_BRANCH:$PROD_BRANCH" --force
 ###
 # CLEAN UP
 ###
-
+git checkout main
 echo "🧹 Cleaning up temporary branch..."
 git branch -D "$SNAPSHOT_BRANCH"
 
