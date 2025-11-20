@@ -16,8 +16,8 @@ export default {
 			strict: true
 		}),
 	paths: {
-      base: dev ? '' : `/${repo}`
-	  //base: ''//dev ? '' : `/${repo}`
+      //base: dev ? '' : `/${repo}`
+	  base: ''//dev ? '' : `/${repo}`
     },
 	}
 };

@@ -8,6 +8,8 @@
 
 	onMount(async () => {
 		const response = await fetch('/api/projects');
+		console.log('Fetching projects from:', '/api/projects');
+		console.log('Response status:', response.status);
 		projects = await response.json();
 		isLoading = false;
 	});
