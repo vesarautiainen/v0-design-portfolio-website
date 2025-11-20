@@ -29,10 +29,10 @@
 <section class="px-6 md:px-12 py-20 md:py-32 max-w-6xl mx-auto">
 	<div class="space-y-4">
 		<h1 class="text-4xl md:text-6xl font-bold text-balance">
-			Creative Design & Digital Experiences
+			Product Development Creativity Unleashed
 		</h1>
 		<p class="text-lg md:text-xl text-muted-foreground max-w-2xl text-pretty">
-			Crafting thoughtful design solutions that blend aesthetics with functionality.
+			Product designer that turns complex problems into intuitive, user-centered solutions. I bring a blend of UX, developer skills, and product thinking to shape ideas into polished digital experiences. I love combining practicality with creativity to push the design forward.
 		</p>
 	</div>
 </section>
