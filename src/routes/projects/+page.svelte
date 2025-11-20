@@ -2,16 +2,18 @@
 	import { onMount } from 'svelte';
 	import ProjectCard from '$lib/components/project-card.svelte';
 	import { base } from '$app/paths';
+	import projects from '$lib/data/projects.json';
 
-	let projects = [];
-	let isLoading = true;
+
+	//let projects = [];
+	let isLoading = false;
 	let filter = 'all';
 
-	onMount(async () => {
-		const response = await fetch(`${base}/api/projects`);
-		projects = await response.json();
-		isLoading = false;
-	});
+	// onMount(async () => {
+	// 	const response = await fetch(`${base}/api/projects`);
+	// 	projects = await response.json();
+	// 	isLoading = false;
+	// });
 
 	$: filteredProjects = filter === 'all' ? projects : projects.filter(p => p.category === filter);
 </script>

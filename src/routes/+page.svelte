@@ -2,18 +2,19 @@
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import ProjectCard from '$lib/components/project-card.svelte';
+	import projects from '$lib/data/projects.json';
 	
 
-	let projects = [];
-	let isLoading = true;
+	//let projects = [];
+	let isLoading = false;
 
-	onMount(async () => {
-		const response = await fetch(`${base}/api/projects`);
-		console.log('Fetching projects from:', `${base}/api/projects`);
-		console.log('Response status:', response.status);
-		projects = await response.json();
-		isLoading = false;
-	});
+	// onMount(async () => {
+	// 	const response = await fetch(`${base}/api/projects`);
+	// 	console.log('Fetching projects from:', `${base}/api/projects`);
+	// 	console.log('Response status:', response.status);
+	// 	projects = await response.json();
+	// 	isLoading = false;
+	// });
 </script>
 
 <svelte:head>
