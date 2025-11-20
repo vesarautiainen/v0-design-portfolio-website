@@ -39,10 +39,10 @@ echo
 ###
 
 echo "📦 Creating clean snapshot on branch $SNAPSHOT_BRANCH ..."
-¨git checkout -b "$SNAPSHOT_BRANCH"
+git checkout -b "$SNAPSHOT_BRANCH"
 git reset --soft $(git rev-list --max-parents=0 HEAD)
 git commit -m "Release to production: $(date +'%Y-%m-%d %H:%M:%S')"
-¨
+
 ###
 # PUSH TO PRODUCTION
 ###
