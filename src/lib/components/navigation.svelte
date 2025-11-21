@@ -16,7 +16,11 @@
 
 <nav class="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-muted">
 	<div class="px-6 md:px-12 py-4 max-w-6xl mx-auto flex items-center justify-between">
-		<a href="{base}/" class="text-xl font-bold hover:text-muted-foreground transition-colors">Vesa Rautiainen</a>
+		<a href="{base}/" class="flex items-center text-xl font-bold hover:text-muted-foreground transition-colors">
+			<img src="/favicon.svg" alt="Logo" class="w-8 h-8 mr-2" />
+			<span style="font-family: 'Fira Sans', sans-serif; font-weight: 100;">vesa</span>
+			<span style="font-family: 'Fira Sans', sans-serif; font-weight: 1000;">rautiainen</span>
+		</a>
 
 		<!-- Desktop menu - hidden on mobile -->
 		<div class="hidden md:flex items-center gap-8">
