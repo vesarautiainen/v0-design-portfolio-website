@@ -8,14 +8,14 @@
 			<div>
 				<h3 class="font-bold mb-4">Connect</h3>
 				<div class="space-y-2">
-					<a href="#" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
+					<a href="https://www.linkedin.com/in/vesarautiainen" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						LinkedIn
 					</a>
-					<a href="#" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
+					<a href="https://github.com/vesarautiainen" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						GitHub
 					</a>
 					<a href="#" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
-						Twitter
+						X (Twitter)
 					</a>
 				</div>
 			</div>
