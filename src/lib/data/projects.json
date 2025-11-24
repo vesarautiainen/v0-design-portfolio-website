@@ -37,12 +37,12 @@
         "image": "/project-1/image-2.webp",
         "alt": "An example image from the project.",
         "caption": "Figure 1: Example caption for the image.",
-        "align": "left",
+        "align": "right",
         "text": "Text associated with the image. Loresum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
         "type": "ImageSection",
-        "title": "Testing an images section (other alignement)",
+        "title": "",
         "image": "/project-1/image-1.webp",
         "alt": "An example image from the project.",
         "caption": "Figure 1: Example caption for the image.",
@@ -68,9 +68,36 @@
         "type": "TextSection",
         "title": "Project Overview 2",
         "text": "Project 2 overview text goes here."      
+      },
+      {
+        "type": "ImageGallery",
+        "title": "Design Mockups",
+        "images": [
+          {
+            "src": "/project-2/image-1.webp",
+            "alt": "Design mockup 1 showing the line staging feature in action.",
+            "caption": "Design mockup 1 showing the line staging feature in action."
+          },
+          {
+            "src": "/project-2/image-2.webp",
+            "alt": "Design mockup 2 showing the line staging feature in action.",
+            "caption": "Design mockup 2 showing the line staging feature in action."
+          },
+          {
+            "src": "/project-2/image-3.webp",
+            "alt": "Design mockup 3 showing the line staging feature in action.",
+            "caption": ""            
+          },
+          {
+            "src": "/project-2/image-4.webp",
+            "alt": "Design mockup 4 showing the line staging feature in action.",
+            "caption": ""            
+          }
+        ]
       }
-    ]
+    ] 
   },
+
   {
     "id": 3,
     "slug": "brand-identity",
