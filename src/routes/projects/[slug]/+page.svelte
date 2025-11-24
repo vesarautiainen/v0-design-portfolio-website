@@ -54,7 +54,7 @@
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 border-y border-muted">
 				<div>
 					<p class="text-sm text-muted-foreground mb-1">Category</p>
-					<p class="font-semibold">{project.category}</p>
+					<p class="font-semibold">{project.categories.join(', ')}</p>
 				</div>
 				<div>
 					<p class="text-sm text-muted-foreground mb-1">Year</p>

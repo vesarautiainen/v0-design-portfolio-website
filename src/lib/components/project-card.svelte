@@ -15,7 +15,7 @@
 		<h3 class="text-xl font-bold mb-2 group-hover:text-muted-foreground transition-colors">
 			{project.title}
 		</h3>
-		<p class="text-sm text-muted-foreground mb-3">{project.category}</p>
+		<p class="text-sm text-muted-foreground mb-3">{project.categories.join(', ')}</p>
 		<p class="text-foreground text-sm leading-relaxed">{project.description}</p>
 	</div>
 </div>
