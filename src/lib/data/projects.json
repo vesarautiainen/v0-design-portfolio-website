@@ -1,56 +1,75 @@
 [
   {
     "id": 1,
-    "slug": "ubuntu-touch-converged-platform",
-    "title": "Ubuntu Touch Converged Platform",
-    "categories": ["UX Design"],
-    "description": "Multi-form-factor UI platform for phones, tablets and desktops.",
-    "thumbnail": "/project-1/thumb.webp",
+    "slug": "ubuntu-application-switcher",
+    "title": "Ubuntu Application Switcher",
+    "categories": ["UX Design", "Prototyping", "UI Development"],
+    "description": "Ubuntu is Linux distribution developed by Canonical Ltd. It has traditionally focused on desktop and server operating systems, but in ???? Canonical started developing Ubuntu for mobile devices. As part of this effort, I designed and prototyped an application switcher for Ubuntu Touch OS, which was implemented in the final product.",
+    "thumbnail": "/project-1/composition.webp",
     "featured": true,
-    "featured_image": "/project-1/thumb.webp",
-    "year": 2016,
+    "featured_image": "/project-1/composition.webp",
+    "year": "????",
     "role": "Lead Interaction Designer",
     "client": "Canonical Ltd.",
     "content":[
       {
         "type": "TextSection",
-        "title": "Project Overview 1",
-        "text": "Project 1 overview text goes here."
+        "title": "The UX Challenge",
+        "text": "Application switching is one of the most often performed tasks in both mobile and desktop operating systems. Hence it needs to be a fluid and frictionless interaction. For this project the main requirements were: \n\n• Full convergence: the same switcher would need to work on phone, tablet and PC desktop. \n• Needs to handle both windowed and non-windowed environments. \n• Multiple workspace support needs to be taken into account. \n• Needs to support all available input types: touch, pointer and keyboard. \n• Single code base approach (stakeholder and engineering requirement). \n• The existing design relying on stacked cards needs to be taken into consideration. \n\n The main UX challenges:\n • How to create an adapting layout that transforms andcovers all use cases.\n • Creating consistent set of transitions and animations which would also be delightful to use and reinforce user’s metal model of the system.\n • Application window size can be arbitrary and vary between the windows simultaneously on the screen.\n • Horizontal space is limited but the design needs to scale to support 0-N application and 0-N workspaces."
       },
       {
         "type": "TextSection",
-        "title": "",
-        "text": "Second description paragraph."
+        "title": "The UX Approach",
+        "text": "Guiding design principles that helped in the design process:\n\n • Prefer subtle and unobtrusive animations to provide quick and consistent feeling across the use cases.\n• Utilise the screen real estate as well as possible and avoid overflow behind the screen edges.\n• Provide easily identifiable application info (card + icon + label).\n• Aim for full convergence: Same visual appearance, functionality and interactions across form factors, devices and input types.\n• Re-use existing Ubuntu design and visual patterns.\n\nI wrote an interactive prototype to help in design.This turned out\nto be invaluable approach that helped out to identify and solve many corner use cases. The prototype also worked as partial documentation for developers."
+      },
+     {
+        "type": "ImageGallery",
+        "images": [
+          {
+            "src": "/project-1/switcher-sketch-1.webp",
+            "alt": "Design mockup 1 showing the line staging feature in action.",
+            "caption": "Design mockup 1 showing the line staging feature in action."
+          },
+          {
+            "src": "/project-1/switcher-sketch-2.webp",
+            "alt": "Design mockup 2 showing the line staging feature in action.",
+            "caption": "Design mockup 2 showing the line staging feature in action."
+          },
+          {
+            "src": "/project-1/switcher-sketch-3.webp",
+            "alt": "Design mockup 3 showing the line staging feature in action.",
+            "caption": ""            
+          },
+          {
+            "src": "/project-1/switcher-sketch-4.webp",
+            "alt": "Design mockup 4 showing the line staging feature in action.",
+            "caption": ""            
+          },
+          {
+            "src": "/project-1/diagram.webp",
+            "alt": "Design mockup 4 showing the line staging feature in action.",
+            "caption": ""            
+          }
+        ]
       },
       {
         "type": "ImageSection",
-        "title": "Testing an images section",
-        "image": "/project-1/image-1.webp",
-        "alt": "An example image from the project.",
-        "caption": "Figure 1: Example caption for the image.",
-        "align": "left",
-        "text": "Text associated with the image."
-      },
-      {
-        "type": "ImageSection",
-        "title": "Testing an images section (other alignement)",
+        "title": "The final design",
         "image": "/project-1/image-2.webp",
         "alt": "An example image from the project.",
         "caption": "Figure 1: Example caption for the image.",
         "align": "right",
-        "text": "Text associated with the image. Loresum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "text": "The result layout is fully responsive that can adjust its element sizes, margins and visibility while maintaining balanced look and feel. Application widows are cropped in to a square shape with suitable cropping algorithm and application icon and label were added to maximise application identifiability. The final design supports following functionality: \n\n • Application switching. \n• Closing applications \n• Moving applications between workspaces \n• Closing, reordering and merging workspaces \n• Focusing on to another workspace. "
       },
+      
       {
-        "type": "ImageSection",
-        "title": "",
-        "image": "/project-1/image-1.webp",
-        "alt": "An example image from the project.",
-        "caption": "Figure 1: Example caption for the image.",
-        "align": "right",
-        "text": ""
+        "type": "TextSection",
+        "title": "Impact",
+        "text": "The converged switcher was part of Ubuntu 10.16 release as a default Unity 8 application switcher. The final implementation is essential part of a product that got awarded: **Orange Award for Converged Computing** at Mobile World Congress 2017."
       }
     ]
   },
+  
   {
     "id": 2,
     "slug": "accessible-change-indicators",

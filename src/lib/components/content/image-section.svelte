@@ -1,5 +1,6 @@
 
-<script lang="ts">
+<script lang="ts">  
+  import TextSection from './text-section.svelte';
   export let title: string = "";
   export let image: string;
   export let alt: string = "";
@@ -10,9 +11,6 @@
 
 
 <section class="my-8">
-  {#if title}
-    <h2 class="text-2xl font-bold mb-4">{title}</h2>
-  {/if}
   <div class="flex flex-col md:flex-row {align === 'right' ? 'md:flex-row-reverse' : ''} items-center gap-6">
     <div class="md:w-1/2 w-full flex-shrink-0">
       {#if image}
@@ -22,9 +20,7 @@
         {/if}
       {/if}
     </div>
-    <div class="md:w-1/2 w-full">
-      <p class="text-base leading-relaxed">{text}</p>
-    </div>
+    <TextSection {title} {text} />
   </div>
 </section>
 
