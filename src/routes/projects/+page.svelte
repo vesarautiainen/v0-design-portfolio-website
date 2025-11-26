@@ -32,7 +32,7 @@
 
 	<!-- Filter Buttons -->
 	<div class="flex flex-wrap gap-3 mb-12">
-		{#each ['all', 'UX Design', 'Prototyping', 'AI', 'Accessibility', 'User Research'] as cat}
+		{#each ['all', 'UX Design', 'Prototyping', 'AI', 'Accessibility', 'User Research', 'UI Development'] as cat}
 			<button
 				on:click={() => (filter = cat)}
 				class="px-4 py-2 rounded transition-colors {filter === cat
