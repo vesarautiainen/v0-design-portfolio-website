@@ -100,21 +100,44 @@
 
   {
     "id": 3,
-    "slug": "brand-identity",
-    "title": "Tech Startup Brand Identity",
-    "categories": ["Branding"],
-    "description": "Complete brand identity system including logo, color palette, typography, and brand guidelines.",
+    "slug": "version-control-redesign",
+    "title": "Version Control redesign in Visual Studio",
+    "categories": ["UX Design", "User Research"],
+    "description": "Full redesign of version control in Visual Studio to improve usability and workflow efficiency for developers.",
     "thumbnail": "",
     "featured": false,
     "featured_image": "/brand-identity-system.png",
-    "year": 2023,
-    "role": "Brand Designer",
-    "client": "InnovateTech Startup",
+    "year": 2020,
+    "role": "User Experience Designer",
+    "client": "Microsoft Corporation",
     "content":[
       {
         "type": "TextSection",
-        "title": "Project Overview 3",
+        "title": "Project Overview",
         "text": "Project 3 overview text goes here."
+      },
+      {
+        "type": "ImageSection",
+        "title": "UX Problem",
+        "image": "/project-3/problem.webp",
+        "alt": "Version control interface with multiple issues highlighted.",
+        "caption": "Multiple problems identified in the existing version control interface.",
+        "align": "right",
+        "text": "The version control interface in Visual Studio had several usability issues that hindered developers' productivity. Key problems included unclear status indicators, a cluttered layout, and inefficient workflows for staging and committing changes."
+      },
+      {
+        "type": "ImageSection",
+        "title": "Research Findings",
+        "image": "/project-3/research.webp",
+        "alt": "Affinity diagram showing user research insights.",
+        "caption": "Affinity diagram showing user research insights.",
+        "align": "left",
+        "text": "Together with program managers and researchers, we conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control system. Key findings highlighted the need for clearer visual cues, simplified workflows, and better integration with other development tools."
+      },
+      {
+        "type": "TextSection",
+        "title": "Web appearance",
+        "text": "The New Git Experience (Youtube): https://www.youtube.com/watch?v=ZiQ2LXtAJ6I"
       }
     ] 
   }
