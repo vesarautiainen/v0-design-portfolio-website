@@ -4,11 +4,11 @@
     "slug": "ubuntu-application-switcher",
     "title": "Ubuntu Application Switcher",
     "categories": ["UX Design", "Prototyping", "UI Development"],
-    "description": "Ubuntu is Linux distribution developed by Canonical Ltd. It has traditionally focused on desktop and server operating systems, but in ???? Canonical started developing Ubuntu for mobile devices. As part of this effort, I designed and prototyped an application switcher for Ubuntu Touch OS, which was implemented in the final product.",
+    "description": "Canonical Ltd. started developing Ubuntu for mobile devices. As part of this effort, I designed and prototyped an application switcher for Ubuntu Touch OS.",
     "thumbnail": "/project-1/composition.webp",
     "featured": true,
     "featured_image": "/project-1/composition.webp",
-    "year": "????",
+    "year": "2015",
     "role": "Lead Interaction Designer",
     "client": "Canonical Ltd.",
     "content":[
@@ -53,11 +53,16 @@
         ]
       },
       {
+        "type": "EmbeddedVideo",
+        "url": "https://vimeo.com/1140845194",
+        "caption": "An interactive prototype demonstrating the application switcher functionality."
+      },
+      {
         "type": "ImageSection",
         "title": "The final design",
-        "image": "/project-1/image-2.webp",
+        "image": "/project-1/convergence.webp",
         "alt": "An example image from the project.",
-        "caption": "Figure 1: Example caption for the image.",
+        "caption": "The same design and codebase works across phone, tablet and desktop form factors.",
         "align": "right",
         "text": "The result layout is fully responsive that can adjust its element sizes, margins and visibility while maintaining balanced look and feel. Application widows are cropped in to a square shape with suitable cropping algorithm and application icon and label were added to maximise application identifiability. The final design supports following functionality: \n\n • Application switching. \n• Closing applications \n• Moving applications between workspaces \n• Closing, reordering and merging workspaces \n• Focusing on to another workspace. "
       },
@@ -65,7 +70,7 @@
       {
         "type": "TextSection",
         "title": "Impact",
-        "text": "The converged switcher was part of Ubuntu 10.16 release as a default Unity 8 application switcher. The final implementation is essential part of a product that got awarded: **Orange Award for Converged Computing** at Mobile World Congress 2017."
+        "text": "The converged switcher was part of Ubuntu 10.16 release as a default Unity 8 application switcher. The final implementation is essential part of a product that got awarded: 🏆 **Orange Award for Converged Computing** at Mobile World Congress 2017."
       }
     ]
   },
