@@ -1,6 +1,8 @@
 <script lang="ts">
+  import { createEventDispatcher } from 'svelte';
   export let title: string;
   export let images: { src: string; alt: string; caption: string }[] = [];
+  const dispatch = createEventDispatcher();
 </script>
 
 <section class="image-gallery">
@@ -8,9 +10,19 @@
     <h2 class="gallery-title">{title}</h2>
   {/if}
   <div class="gallery-grid">
-    {#each images as image (image.src)}
+    {#each images as image, idx (image.src)}
       <figure class="gallery-item">
-        <img src={image.src} alt={image.alt} loading="lazy" />
+        <button type="button" class="block p-0 bg-transparent border-none" style="box-shadow:none" aria-label="Open image in carousel"
+          on:click={() => dispatch('mediaClick', { type: 'ImageGallery', src: image.src, alt: image.alt, caption: image.caption, index: idx })}
+          on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && dispatch('mediaClick', { type: 'ImageGallery', src: image.src, alt: image.alt, caption: image.caption, index: idx })}
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            loading="lazy"
+            class="cursor-pointer"
+          />
+        </button>
         {#if image.caption}
           <figcaption>{image.caption}</figcaption>
         {/if}

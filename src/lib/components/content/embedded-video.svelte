@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { createEventDispatcher } from 'svelte';
   export let url: string;
   export let caption: string = '';
 
@@ -9,10 +10,14 @@
     const match = url.match(/vimeo\.com\/(\d+)/) || url.match(/player\.vimeo\.com\/video\/(\d+)/);
     videoId = match ? match[1] : '';
   }
+  const dispatch = createEventDispatcher();
 </script>
 
 {#if videoId}
-  <div class="w-full aspect-video rounded-lg overflow-hidden mb-2">
+  <button type="button" class="block w-full aspect-video rounded-lg overflow-hidden mb-2 p-0 bg-transparent border-none cursor-pointer" aria-label="Open video in carousel"
+    on:click={() => dispatch('mediaClick', { type: 'EmbeddedVideo', url, caption })}
+    on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && dispatch('mediaClick', { type: 'EmbeddedVideo', url, caption })}
+  >
     <iframe
       src={`https://player.vimeo.com/video/${videoId}`}
       frameborder="0"
@@ -20,8 +25,9 @@
       allowfullscreen
       class="w-full h-full"
       title="Vimeo video"
+      tabindex="-1"
     ></iframe>
-  </div>
+  </button>
   {#if caption}
     <div class="text-xs text-muted-foreground text-center mt-2">{caption}</div>
   {/if}

@@ -5,10 +5,48 @@
 	import projects from '$lib/data/projects.json';
 
 	import { contentComponentMap } from '$lib/components/content/registry';
+	import MediaCarouselOverlay from '$lib/components/content/media-carousel-overlay.svelte';
+
 
 
 	let project = null;
 	let isLoading = true;
+
+	let showCarousel = false;
+	let carouselItems = [];
+	let carouselInitialIndex = 0;
+
+	// Extract all images and videos from project.content
+	function extractMediaItems(content) {
+		const items = [];
+		if (!content) return items;
+		content.forEach((block) => {
+			if (block.type === 'ImageSection' && block.image) {
+				items.push({
+					type: 'ImageSection',
+					src: block.image,
+					alt: block.alt,
+					caption: block.caption || '',
+				});
+			} else if (block.type === 'ImageGallery' && Array.isArray(block.images)) {
+				block.images.forEach(img => {
+					items.push({
+						type: 'ImageGallery',
+						src: img.src,
+						alt: img.alt,
+						caption: img.caption || '',
+					});
+				});
+			} else if (block.type === 'EmbeddedVideo' && block.url) {
+				items.push({
+					type: 'EmbeddedVideo',
+					url: block.url,
+					caption: block.caption || '',
+				});
+			}
+		});
+		return items;
+	}
 
 	// onMount(async () => {
 	// 	const response = await fetch(`${base}/api/projects/${$page.params.slug}`);
@@ -16,13 +54,17 @@
 	// 	isLoading = false;
 	// });
 
+
 	$:
 	if ($page) {
 		const slug = $page.params.slug;
-
-		// find the project by slug
 		project = projects.find(p => p.slug === slug);
 		isLoading = false;
+		if (project && project.content) {
+			carouselItems = extractMediaItems(project.content);
+		} else {
+			carouselItems = [];
+		}
 	}
 
 </script>
@@ -33,14 +75,21 @@
 </svelte:head>
 
 <article class="px-6 md:px-12 py-20 max-w-5xl mx-auto">
+	{#if showCarousel && carouselItems.length > 0}
+		<MediaCarouselOverlay
+			items={carouselItems}
+			initialIndex={carouselInitialIndex}
+			onClose={() => (showCarousel = false)}
+		/>
+	{/if}
 	{#if isLoading}
 		<div class="space-y-6">
-			<div class="h-10 bg-muted rounded w-1/3 animate-pulse" />
-			<div class="h-96 bg-muted rounded-lg animate-pulse" />
-			<div class="space-y-3">
-				<div class="h-4 bg-muted rounded w-full animate-pulse" />
-				<div class="h-4 bg-muted rounded w-5/6 animate-pulse" />
-			</div>
+			   <div class="h-10 bg-muted rounded w-1/3 animate-pulse"></div>
+			   <div class="h-96 bg-muted rounded-lg animate-pulse"></div>
+			   <div class="space-y-3">
+				   <div class="h-4 bg-muted rounded w-full animate-pulse"></div>
+				   <div class="h-4 bg-muted rounded w-5/6 animate-pulse"></div>
+			   </div>
 		</div>
 	{:else if project}
 		<div class="space-y-8">
@@ -82,21 +131,61 @@
 
 			<!-- Content -->
 			<div class="prose prose-invert max-w-none">
-				   {#each project.content as contentBlock}
-					   {#if contentComponentMap[contentBlock.type]}
-						   <svelte:component this={contentComponentMap[contentBlock.type]} {...contentBlock} />
-					   {/if}
-				   {/each}
+				{#each project.content as contentBlock, blockIdx}
+					{#if contentBlock.type === 'ImageSection'}
+						<svelte:component
+							this={contentComponentMap['ImageSection']}
+							{...contentBlock}
+							on:mediaClick={(e) => {
+								showCarousel = true;
+								const idx = carouselItems.findIndex(item => item.type === 'ImageSection' && item.src === contentBlock.image);
+								carouselInitialIndex = idx;
+							}}
+						/>
+					{:else if contentBlock.type === 'ImageGallery'}
+						<svelte:component
+							this={contentComponentMap['ImageGallery']}
+							{...contentBlock}
+							on:mediaClick={(e) => {
+								showCarousel = true;
+								// Use src and type to find correct index
+								const idx = carouselItems.findIndex(item => item.type === 'ImageGallery' && item.src === e.detail.src);
+								carouselInitialIndex = idx;
+							}}
+						/>
+					{:else if contentBlock.type === 'EmbeddedVideo'}
+						<svelte:component
+							this={contentComponentMap['EmbeddedVideo']}
+							{...contentBlock}
+							on:mediaClick={(e) => {
+								showCarousel = true;
+								const idx = carouselItems.findIndex(item => item.type === 'EmbeddedVideo' && item.url === contentBlock.url);
+								carouselInitialIndex = idx;
+							}}
+						/>
+					{:else}
+						{#if contentComponentMap[contentBlock.type]}
+							<svelte:component this={contentComponentMap[contentBlock.type]} {...contentBlock} />
+						{/if}
+					{/if}
+				{/each}
 
 				{#if project.images && project.images.length > 0}
 					<h2 class="text-2xl font-bold mt-8 mb-4">Gallery</h2>
 					<div class="grid md:grid-cols-2 gap-6">
 						{#each project.images as image}
-							<img
-								src={image || "/placeholder.svg"}
-								alt="Project screenshot"
-								class="w-full rounded-lg object-cover"
-							/>
+							<button type="button" class="block w-full p-0 bg-transparent border-none" aria-label="Open image in carousel"
+								on:click={() => {
+									showCarousel = true;
+									carouselInitialIndex = carouselItems.findIndex(item => item.src === image);
+								}}
+							>
+								<img
+									src={image || "/placeholder.svg"}
+									alt="Project screenshot"
+									class="w-full rounded-lg object-cover cursor-pointer"
+								/>
+							</button>
 						{/each}
 					</div>
 				{/if}
