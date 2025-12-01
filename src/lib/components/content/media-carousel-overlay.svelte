@@ -34,9 +34,9 @@
   <button class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-3xl" on:click={prev} aria-label="Previous">&#8592;</button>
   <button class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-3xl" on:click={next} aria-label="Next">&#8594;</button>
 
-  <div class="max-w-3xl w-full flex flex-col items-center">
+  <div class="max-w-5xl w-full flex flex-col items-center px-8 pb-4">
     {#if items[current].type === 'ImageSection' || items[current].type === 'ImageGallery'}
-      <img src={items[current].src} alt={items[current].alt} class="max-h-[80vh] max-w-full rounded shadow-lg" />
+      <img src={items[current].src} alt={items[current].alt} class="max-h-[80vh] max-w-[85vw] rounded shadow-2xl" style="box-sizing: border-box;" />
     {:else if items[current].type === 'EmbeddedVideo'}
       {#if items[current].url && items[current].url.match(/vimeo\.com\/(\d+)/)}
         <iframe
@@ -44,7 +44,8 @@
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
-          class="w-full aspect-video max-h-[80vh] rounded shadow-lg"
+          class="w-full aspect-video max-h-[80vh] max-w-[85vw] rounded shadow-2xl"
+          style="box-sizing: border-box;"
         ></iframe>
       {/if}
     {/if}
