@@ -124,15 +124,15 @@
 
   {
     "id": 3,
-    "slug": "version-control-redesign",
-    "title": "Version Control redesign in Visual Studio",
-    "categories": ["UX Design", "User Research"],
-    "description": "Full redesign of version control in Visual Studio to improve usability and workflow efficiency for developers.",
-    "thumbnail": "",
-    "featured": false,
-    "featured_image": "/brand-identity-system.png",
-    "year": 2020,
-    "role": "User Experience Designer",
+    "slug": "visual-studio-copilot-extenders",
+    "title": "Visual Studio Copilot Integrations",
+    "categories": ["UX Design", "AI"],
+    "description": "Designing Copilot AI integrations across developer tools",
+    "thumbnail": "/project-3/Featured-VS-Copilot.webp",
+    "featured": true,
+    "featured_image": "/project-3/Featured-VS-Copilot.webp",
+    "year": 2025,
+    "role": "Principal Designer",
     "client": "Microsoft Corporation",
     "content":[
       {
