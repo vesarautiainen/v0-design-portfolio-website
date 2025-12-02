@@ -46,13 +46,13 @@
 
 	<!-- Projects Grid -->
 	{#if isLoading}
-		<div class="grid md:grid-cols-2 gap-8">
+		<div class="grid md:grid-cols-2 gap-16">
 			{#each Array(6) as _}
 				<div class="h-96 bg-muted rounded-lg animate-pulse" />
 			{/each}
 		</div>
 	{:else}
-		<div class="grid md:grid-cols-2 gap-8">
+		<div class="grid md:grid-cols-2 gap-16">
 			{#each filteredProjects as project (project.id)}
 				<a href="/projects/{project.slug}" class="group">
 					<ProjectCard {project} />
