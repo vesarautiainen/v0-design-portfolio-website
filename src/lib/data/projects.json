@@ -138,12 +138,41 @@
       {
         "type": "TextSection",
         "title": "Project Overview",
-        "text": "Project 3 overview text goes here."
+        "text": "Aligned GH Copilot integrations across toolsets throughout Visual Studio. I navigated competing constraints across different feature teams and aligned numerous stakeholders."
       },
       {
         "type": "ImageSection",
         "title": "UX Problem",
         "image": "/project-3/problem.webp",
+        "alt": "@todo: Add alt text",
+        "caption": "UI full of inconsistencies confusing users, causing frustration, inefficiency, and discovery issues.",
+        "align": "right",
+        "text": "The user experience in different Visual Studio tools was inconsistent, didn't follow design guidelines, and lacked understanding of end-to-end scenarios. Teams worked in silos, leading to fragmented experiences that confused users and hindered productivity. There was a need to unify the design language, improve usability, and ensure accessibility across all Copilot integrations."
+      }
+    ] 
+  },
+  {
+    "id": 4,
+    "slug": "visual-studio-new-git-experience",
+    "title": "New Git Experience",
+    "categories": ["UX Design", "User Research"],
+    "description": "Designing a new Git version control UX",
+    "thumbnail": "/project-4/Featured-VS-Copilot.webp",
+    "featured": false,
+    "featured_image": "/project-4/Featured-VS-Copilot.webp",
+    "year": 2020,
+    "role": "Senior Designer",
+    "client": "Microsoft Corporation",
+    "content":[
+      {
+        "type": "TextSection",
+        "title": "Project Overview",
+        "text": "Project 4 overview text goes here."
+      },
+      {
+        "type": "ImageSection",
+        "title": "UX Problem",
+        "image": "/project-4/problem.webp",
         "alt": "Version control interface with multiple issues highlighted.",
         "caption": "Multiple problems identified in the existing version control interface.",
         "align": "right",
@@ -152,17 +181,26 @@
       {
         "type": "ImageSection",
         "title": "Research Findings",
-        "image": "/project-3/research.webp",
+        "image": "/project-4/research.webp",
         "alt": "Affinity diagram showing user research insights.",
         "caption": "Affinity diagram showing user research insights.",
         "align": "left",
         "text": "Together with program managers and researchers, we conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control system. Key findings highlighted the need for clearer visual cues, simplified workflows, and better integration with other development tools."
       },
       {
+        "type": "ImageSection",
+        "title": "Git Graph Tags",
+        "image": "/project-4/graph-tags.gif",
+        "alt": "Image showing Git Graph Tags in responsive layout.  ",
+        "caption": "Tags are responsive and adjusting to the column width.",
+        "align": "right",
+        "text": "Add text about Git Graph Tags here. The description needs to be long enough to show how the image aligns to the right of the text content."
+      },
+      {
         "type": "TextSection",
         "title": "Web appearance",
         "text": "The New Git Experience (Youtube): https://www.youtube.com/watch?v=ZiQ2LXtAJ6I"
       }
-    ] 
+    ]
   }
 ]
