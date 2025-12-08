@@ -80,18 +80,32 @@
     "slug": "accessible-change-indicators",
     "title": "Accessible Version Control Change Indicators",
     "categories": ["UX Design", "Accessibility"],
-    "description": "Designing an accessible line staging feature for Visual Studio to enhance code management for developers with disabilities.",
-    "thumbnail": "project-2/thumb.webp",
+    "description": "Designing accessible change indicators for Visual Studio to enhance code management for developers with disabilities.",
+    "thumbnail": "/project-2/thumb.webp",
     "featured": true,
-    "featured_image": "/fitness-app-interface.png",
-    "year": 2024,
-    "role": "UX/UI Designer",
-    "client": "FitLife Co.",
+    "featured_image": "/project-2/hero.webp",
+    "year": 2022  ,
+    "role": "Senior UX Designer",
+    "client": "Microsoft",
     "content":[
       {
         "type": "TextSection",
-        "title": "Project Overview 2",
-        "text": "Project 2 overview text goes here."      
+        "title": "Project Overview",
+        "text": "The code change indicators mark lines that have been modified, added, or deleted in the code file. The existing indicators in Visual Studio's version control system were not accessible for all users, and didn't provide the change type information being inconsistent with for example VS Code. I led the redesign work to ensure they were accessible and usable by all developers, regardless of their visual abilities."      
+      },
+      {
+        "type": "ImageSection",
+        "title": "UX Problem",
+        "image": "/project-2/image-1.webp",
+        "alt": "@todo: change this alt text",
+        "caption": "Caption text",
+        "align": "below",
+        "text": "• The indicators had 2 visual states **changed-not saved (yellow bar)**, and **changed-saved (green bar)** represented only by color. \n• The change margin indicators don’t follow the Git status.\n• Works differently than for example Visual Code while the goal is to align with it.\n• Different kinds of changes are not distinguishable.\n• Not accessible for vision impaired users.\n• Color contrast ratio is not sufficient for passing WCAG standards.\n• Color blinds can’t distinguish unsaved changes from saved changes."
+      },
+      {
+        "type": "TextSection",
+        "title": "Design Process",
+        "text": " First we conducted user research and usability testing with developers with visual impairments to understand their needs and challenges with the existing indicators. Collaborated with accessibility experts to ensure compliance with accessibility standards and guidelines. Explored various design options, including patterns, shapes, and textures, to create indicators that were easily distinguishable by all users. Developed prototypes and conducted iterative testing to refine the designs based on user feedback."      
       },
       {
         "type": "ImageGallery",
@@ -118,10 +132,23 @@
             "caption": ""            
           }
         ]
+      },
+      {
+        "type": "ImageSection",
+        "title": "Final Design",
+        "image": "/project-2/image-1.webp",
+        "alt": "@todo: change this alt text",
+        "caption": "Caption text",
+        "align": "below",
+        "text": "text"
+      },
+      {
+      "type": "TextSection",
+      "title": "Links",
+      "text": "Blog post about the line staging features by my PM partner: https://devblogs.microsoft.com/visualstudio/line-staging-interactive-staging/"
       }
     ] 
   },
-
   {
     "id": 3,
     "slug": "visual-studio-copilot-extenders",
