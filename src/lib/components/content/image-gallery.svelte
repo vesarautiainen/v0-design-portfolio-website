@@ -24,7 +24,7 @@
           />
         </button>
         {#if image.caption}
-          <figcaption>{image.caption}</figcaption>
+          <figcaption class="text-xs text-muted-foreground mt-2 text-left">{image.caption}</figcaption>
         {/if}
       </figure>
     {/each}
@@ -58,9 +58,6 @@
     background: #f8f8f8;
   }
   .gallery-item figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-    color: #555;
-    text-align: center;
+    /* Style moved to utility classes in markup */
   }
 </style>
