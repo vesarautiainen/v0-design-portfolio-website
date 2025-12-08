@@ -1,7 +1,7 @@
 
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
-  import TextSection from './text-section.svelte';
+  import { marked } from 'marked';
   export let title: string = "";
   export let image: string;
   export let alt: string = "";
@@ -15,10 +15,15 @@
 
 <section class="my-8">
   {#if align === 'below'}
-    <div class="flex flex-col items-start gap-6">
-      <TextSection {title} {text} />
+    <div class="flex flex-col items-start">
+      {#if title}
+        <h2 class="text-xl font-semibold mb-2">{title}</h2>
+      {/if}
+      {#if text}
+        <p class="mb-4 text-base leading-relaxed" style="white-space: pre-line;">{@html marked(text)}</p>
+      {/if}
       {#if image}
-        <div class="w-full">
+        <div class="w-full mt-4">
           <button type="button" class="block mx-auto p-0 bg-transparent border-none" style="box-shadow:none" aria-label="Open image in carousel"
             on:click={() => dispatch('mediaClick', { type: 'ImageSection', src: image, alt, caption })}
             on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && dispatch('mediaClick', { type: 'ImageSection', src: image, alt, caption })}
@@ -53,7 +58,14 @@
           {/if}
         {/if}
       </div>
-      <TextSection {title} {text} />
+      <div class="w-full md:w-1/2 flex-shrink-0">
+        {#if title}
+          <h2 class="text-xl font-semibold mb-2">{title}</h2>
+        {/if}
+        {#if text}
+          <p class="mb-4 text-base leading-relaxed" style="white-space: pre-line;">{@html marked(text)}</p>
+        {/if}
+      </div>
     </div>
   {/if}
 </section>
@@ -62,7 +74,6 @@
   /* Ensure vertical top alignment for image and text sections */
   .flex,
   .flex-col,
-  .flex-row,
   .md\:flex-row {
     align-items: flex-start !important;
   }
