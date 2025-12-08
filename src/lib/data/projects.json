@@ -74,7 +74,6 @@
       }
     ]
   },
-  
   {
     "id": 2,
     "slug": "accessible-change-indicators",
@@ -84,7 +83,7 @@
     "thumbnail": "/project-2/thumb.webp",
     "featured": true,
     "featured_image": "/project-2/hero.webp",
-    "year": 2022  ,
+    "year": 2021  ,
     "role": "Senior UX Designer",
     "client": "Microsoft",
     "content":[
@@ -96,25 +95,34 @@
       {
         "type": "ImageSection",
         "title": "UX Problem",
-        "image": "/project-2/image-1.webp",
+        "image": "/project-2/problem.webp",
         "alt": "@todo: change this alt text",
-        "caption": "Caption text",
+        "caption": "Emulation of how color blind users see the existing change indicators.",
         "align": "below",
-        "text": "• The indicators had 2 visual states **changed-not saved (yellow bar)**, and **changed-saved (green bar)** represented only by color. \n• The change margin indicators don’t follow the Git status.\n• Works differently than for example Visual Code while the goal is to align with it.\n• Different kinds of changes are not distinguishable.\n• Not accessible for vision impaired users.\n• Color contrast ratio is not sufficient for passing WCAG standards.\n• Color blinds can’t distinguish unsaved changes from saved changes."
+        "text": "• The indicators had 2 visual states **changed-not saved (yellow bar)**, and **changed-saved (green bar)** represented only by color.\n• Different kinds of changes (addition, deletion, modification) don't have unique indicators.\n• Imparity with Visual Studio Code.\n•  Not accessible for vision impaired users.\n• Color contrast ratio is not sufficient for passing WCAG standards.\n• Some vision impaired users can’t distinguish unsaved changes from saved changes.\n• The change margin indicators don’t follow the Git status."
+      },
+      {
+        "type": "TextSection",
+        "title": "Objectives",
+        "text": "• Align implementation with our other products.\n• Follow industry standards for code change indicators.\n• Make sure that the new implementation is fully accessible and passes the WCAG rules and Microsoft Accessibility Standards.\n• New design needs to support Line Staging feature the was being designed in parallel.\n• Design for both light and dark themes."
       },
       {
         "type": "TextSection",
         "title": "Design Process",
-        "text": " First we conducted user research and usability testing with developers with visual impairments to understand their needs and challenges with the existing indicators. Collaborated with accessibility experts to ensure compliance with accessibility standards and guidelines. Explored various design options, including patterns, shapes, and textures, to create indicators that were easily distinguishable by all users. Developed prototypes and conducted iterative testing to refine the designs based on user feedback."      
+        "text": "First we conducted user research and usability testing with developers with visual impairments to understand their needs and challenges with the existing indicators. Collaborated with accessibility experts to ensure compliance with accessibility standards and guidelines. I explored various design options, including patterns, shapes, and textures, to create indicators that were easily distinguishable by all users. I developed prototypes and shared those in the community tickets and user testing. I refined the designs based on the feedback from users and experts."      
+      },
+      {
+        "type": "TextSection",
+        "title": "Design Iterations",
+        "text": "We went throught multiple design iterations to explore different visual representations. I tested various shapes, patterns, and color combinations to ensure that the indicators were easily distinguishable by all users. I also considered the overall aesthetics and how the new indicators would fit within the existing Visual Studio interface."
       },
       {
         "type": "ImageGallery",
-        "title": "Design Mockups",
         "images": [
           {
             "src": "/project-2/image-1.webp",
             "alt": "Design mockup 1 showing the line staging feature in action.",
-            "caption": "Design mockup 1 showing the line staging feature in action."
+            "caption": "Iteration "
           },
           {
             "src": "/project-2/image-2.webp",
@@ -134,13 +142,29 @@
         ]
       },
       {
-        "type": "ImageSection",
+        "type": "TextSection",
         "title": "Final Design",
-        "image": "/project-2/image-1.webp",
-        "alt": "@todo: change this alt text",
-        "caption": "Caption text",
-        "align": "below",
-        "text": "text"
+        "text": "final desing description"
+      },
+      {
+        "type": "ImageGallery",
+        "images": [
+          {
+            "src": "/project-2/final-1.webp",
+            "alt": "alt text",
+            "caption": "Final design ... "
+          },
+          {
+            "src": "/project-2/final-2.webp",
+            "alt": "alt text",
+            "caption": "State diagram. "
+          },
+          {
+            "src": "/project-2/final-3.webp",
+            "alt": "alt text",
+            "caption": "Hex values... "
+          }
+        ]
       },
       {
       "type": "TextSection",
