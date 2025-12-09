@@ -95,7 +95,7 @@
 		<div class="space-y-8">
 			<!-- Header -->
 			<div>
-				<a href="/projects" class="text-muted-foreground hover:text-foreground mb-4 inline-block">
+				<a href="/projects" class="text-muted-foreground hover:text-foreground mb-8 inline-block">
 					← Back to Projects
 				</a>
 				<h1 class="text-4xl md:text-5xl font-bold mb-3">{project.title}</h1>
