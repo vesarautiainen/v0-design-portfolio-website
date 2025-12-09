@@ -64,13 +64,13 @@
         "alt": "An example image from the project.",
         "caption": "The same design and codebase works across phone, tablet and desktop form factors.",
         "align": "right",
-        "text": "The result layout is fully responsive that can adjust its element sizes, margins and visibility while maintaining balanced look and feel. Application widows are cropped in to a square shape with suitable cropping algorithm and application icon and label were added to maximise application identifiability. The final design supports following functionality: \n\n • Application switching. \n• Closing applications \n• Moving applications between workspaces \n• Closing, reordering and merging workspaces \n• Focusing on to another workspace. "
+        "text": "The result layout is fully responsive that automatically adjusts its element sizes, margins and visibility while maintaining balanced look and feel. Application windows are cropped in to a square shape with suitable cropping algorithm and application icon and label were added to maximise application identifiability. The final design supports following functionality: \n\n • Application switching. \n• Closing applications \n• Moving applications between workspaces \n• Closing, reordering and merging workspaces \n• Focusing on to another workspace. "
       },
       
       {
         "type": "TextSection",
         "title": "Impact",
-        "text": "The converged switcher was part of Ubuntu 10.16 release as a default Unity 8 application switcher. The final implementation is essential part of a product that got awarded: 🏆 **Orange Award for Converged Computing** at Mobile World Congress 2017."
+        "text": "The converged switcher was part of Ubuntu 10.16 release as a default Unity 8 application switcher. \nThe final implementation is essential part of a product that got awarded: 🏆 **Orange Award for Converged Computing** at Mobile World Congress 2017."
       }
     ]
   },
@@ -104,12 +104,12 @@
       {
         "type": "TextSection",
         "title": "Objectives",
-        "text": "• Align implementation with our other products.\n• Follow industry standards for code change indicators.\n• Make sure that the new implementation is fully accessible and passes the WCAG rules and Microsoft Accessibility Standards.\n• New design needs to support Line Staging feature the was being designed in parallel.\n• Design for both light and dark themes."
+        "text": "• Align implementation with other Microsoft products.\n• Follow more industry standard style for code change indicators.\n• Make sure that the new implementation is fully accessible and passes the WCAG rules and Microsoft Accessibility Standards.\n• New design needs to support Line Staging feature the was being designed in parallel.\n• Design for both light and dark themes."
       },
       {
         "type": "TextSection",
         "title": "Design Process",
-        "text": "First we conducted user research and usability testing with developers with visual impairments to understand their needs and challenges with the existing indicators. Collaborated with accessibility experts to ensure compliance with accessibility standards and guidelines. I explored various design options, including patterns, shapes, and textures, to create indicators that were easily distinguishable by all users. I developed prototypes and shared those in the community tickets and user testing. I refined the designs based on the feedback from users and experts."      
+        "text": "First we conducted user research and usability testing with developers with visual impairments to understand their needs and challenges with the existing indicators. Collaborated with accessibility experts to ensure compliance with accessibility standards and guidelines. I explored various design options, including patterns, shapes, and textures, to create indicators that were easily distinguishable by all users. I developed prototypes and shared those in the community feedback tickets and user testing. I refined the designs based on the feedback from users and experts."      
       },
       {
         "type": "TextSection",
@@ -120,31 +120,31 @@
         "type": "ImageGallery",
         "images": [
           {
-            "src": "/project-2/image-1.webp",
-            "alt": "Design mockup 1 showing the line staging feature in action.",
-            "caption": "Iteration "
+            "src": "/project-2/iterationX-textures.webp",
+            "alt": "Change indicator design iteration exploring various texture patterns to represent different change types.",
+            "caption": "I explored varions texture patterns to represent different change types."
           },
           {
-            "src": "/project-2/image-2.webp",
-            "alt": "Design mockup 2 showing the line staging feature in action.",
-            "caption": "Design mockup 2 showing the line staging feature in action."
+            "src": "/project-2/iterationX-signs.webp",
+            "alt": "Change indicator design iteration exploring various sign and character patterns to represent different change types.",
+            "caption": "Also explored various sign and character patterns."
           },
           {
-            "src": "/project-2/image-3.webp",
-            "alt": "Design mockup 3 showing the line staging feature in action.",
-            "caption": ""            
+            "src": "/project-2/iteration3.webp",
+            "alt": "Different design concepts in iteration 3",
+            "caption": "In iteration 3, users clearly preferred design concept C3.2 over the other presented options."            
           },
           {
-            "src": "/project-2/image-4.webp",
-            "alt": "Design mockup 4 showing the line staging feature in action.",
-            "caption": ""            
+            "src": "/project-2/iteration4-staging-information.webp",
+            "alt": "Design iteration 4 was too complex.",
+            "caption": "Iteration 4 was one of the most complex designs as it showed both change type and staging information. This was concluded too much information for users to process at once."            
           }
         ]
       },
       {
         "type": "TextSection",
-        "title": "Final Design",
-        "text": "final desing description"
+        "title": "Final Design and Impact",
+        "text": "The final design was successfully implemented in Visual Studio 2022 version 17.3 and later. The design met the all the set objectives and received positive feedback from users, particularly those with visual impairments. \n\n I received a patent award for the design work. \n\nSome users still preferred the old design due to familiarity, and we provided an option to switch back to the previous design if desired. Even then, the yellow and green color values were updated for better contrast and accessibility."
       },
       {
         "type": "ImageGallery",
