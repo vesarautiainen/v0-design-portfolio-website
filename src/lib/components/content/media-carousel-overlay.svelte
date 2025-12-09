@@ -56,7 +56,7 @@
       {/if}
     {/if}
     {#if items[current].caption}
-      <div class="text-xs text-muted-foreground text-center mt-2">{items[current].caption}</div>
+      <div class="text-base text-white text-center mt-2">{items[current].caption}</div>
     {/if}
   </div>
 </div>

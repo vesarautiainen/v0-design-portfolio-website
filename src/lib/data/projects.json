@@ -152,7 +152,7 @@
           {
             "src": "/project-2/final-1.webp",
             "alt": "alt text",
-            "caption": "Final design ... "
+            "caption": "All different change types in light and dark themes."
           },
           {
             "src": "/project-2/final-2.webp",
@@ -162,7 +162,7 @@
           {
             "src": "/project-2/final-3.webp",
             "alt": "alt text",
-            "caption": "Hex values... "
+            "caption": "Accessible color hex values ready to be tokenized. "
           }
         ]
       },
