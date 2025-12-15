@@ -6,7 +6,7 @@
     "categories": ["UX Design", "Prototyping", "UI Development"],
     "description": "Canonical Ltd. started developing Ubuntu for mobile devices. As part of this effort, I designed and prototyped an application switcher for Ubuntu Touch OS.",
     "thumbnail": "/project-1/composition.webp",
-    "featured": true,
+    "featured": false,
     "featured_image": "/project-1/composition.webp",
     "year": "2015",
     "role": "Lead Interaction Designer",
@@ -81,7 +81,7 @@
     "categories": ["UX Design", "Accessibility"],
     "description": "Designing accessible change indicators for Visual Studio to enhance code management for developers with disabilities.",
     "thumbnail": "/project-2/thumb.webp",
-    "featured": true,
+    "featured": false,
     "featured_image": "/project-2/featured.webp",
     "year": 2021  ,
     "role": "Senior UX Designer",
@@ -180,7 +180,7 @@
     "categories": ["UX Design", "AI"],
     "description": "Designing Copilot AI integrations across developer tools",
     "thumbnail": "/project-3/Featured-VS-Copilot.webp",
-    "featured": true,
+    "featured": false,
     "featured_image": "/project-3/Featured-VS-Copilot.webp",
     "year": 2025,
     "role": "Principal Designer",
@@ -253,5 +253,35 @@
         "text": "The New Git Experience (Youtube): https://www.youtube.com/watch?v=ZiQ2LXtAJ6I"
       }
     ]
-  }
+  },
+  {
+    "id": 5,
+    "slug": "ubuntu-indicators",
+    "title": "Ubuntu Touch Indicators", 
+    "categories": ["Prototyping", "Interaction Design", "Gesture Design"],
+    "description": "Gesture based indicator panel interactions for Ubuntu Touch OS.", 
+    "thumbnail": "/project-5/thumb.webp",
+    "featured": true,
+    "featured_image": "/project-5/featured.webp",
+    "year": 2014,
+    "role": "UX Prototyper",
+    "client": "Canonical Ltd.",
+    "content":[
+      {
+        "type": "TextSection",
+        "title": "The UX Challenge",
+        "text": "User testing revealed that the existing Ubuntu Touch indicators were suffering from several usability issues. My task was to re-design indicators and to fix following problems:\n\n•  Users didn’t understand the connections between different UI elements.\n• Users struggled with the swipe down gesture and didn’t get the right menu open.\n• Users didn't know how to navigate between open menus.\n• The current design didn’t handle the overflow problem at all."
+      },
+      {
+        "type": "TextSection",
+        "title": "The UX Approach",
+        "text": "To handle the overflow **non-relevant indicators are hidden** in closed state. As soon as the opening gesture is started they become visible again and their menus are accessible. \n\nIndicator items expand once the gesture is started. Initial touch position provides **a horizontal anchor point** around which all expansions happen. This **ensures that the target item doesn’t move during the gesture**.\n\n**Vertical expansion** provides space for the label. Expanded item acts as a clear navigation element when indicators are open. Now two unconnected elements from the previous design were combined to one meaningful element.\n\n**Horizontal expansion provides space for more robust gesture** which was further enhanced with vertical velocity buffering and maximum vertical velocity threshold."
+      },
+      {
+        "type": "TextSection",
+        "title": "The UX Impact",
+        "text": "The new design retained all the good functionality from the old indicators while fixing all usability issues. The new indicator design has been user tested multiple times and the results have been significantly better. It also got good feedback from the actual Ubuntu phone users."
+      }
+    ]
+  } 
 ]
