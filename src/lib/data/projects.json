@@ -308,5 +308,50 @@
         "text": "The new design retained all the good functionality from the old indicators while fixing all usability issues. The new indicator design was user tested multiple times and the results have been significantly better. It fullfilled the stakeholder expectations and also got great feedback from the actual Ubuntu phone users."
       }
     ]
+  },
+  {
+    "id": 6,
+    "slug": "screenreader-plugin-for-figma",
+    "title": "Figma Screen Reader Plugin", 
+    "categories": ["Tooling", "Accessibility"],
+    "description": "Figma plugin to increase design workshop accessibility and productivity.", 
+    "thumbnail": "/project-6/thumb.webp",
+    "featured": true,
+    "featured_image": "/project-6/featured.webp",
+    "year": 2023,
+    "role": "Principal Designer",
+    "client": "Microsoft Corporation",
+    "content":[
+      {
+        "type": "TextSection",
+        "title": "The Challenge",
+        "text": "I attended a workshop focused on identifying problems with programming tools and improving the user experience from the perspective of screen reader users. I interviewed users and tried to communicate the tools I had created to them. I noticed the difficulty in communication because the designs were visual presentations, while visually impaired users rely on a screen reader as their sole interface daily. Validating the designs and obtaining concrete feedback was challenging."
+      },
+      {
+        "type": "TextSection",
+        "title": "The Solution",
+        "text": "I wanted to design a better process and tool for accessible communication of designs to all workshop participants. I developed a plugin for the Figma design software I was using, which acted as a connecting tissue between the design tool and the operating system’s (macOS or Windows) screen reader (Narrator, VoiceOver, NVDA, JAWS, etc). The tool allowed designer to specify screenreader anouncements (ARIA live regions) that were spoken aloud while the design was being interacted with."
+      },
+      {
+        "type": "ImageGallery",
+        "images": [
+          {
+            "src": "/project-6/instructions-create.webp",
+            "alt": "Documentation screenshot showing how to create screen reader annotations in Figma.",
+            "caption": "Create: Documentation on how to create screen reader annotations in Figma."
+          },
+          {
+            "src": "/project-6/instructions-play.webp",
+            "alt": "Documentation screenshot showing how to play screen reader annotations in Figma.",
+            "caption": "Play: Documentation on how to play screen reader annotations in Figma."
+          }
+        ]
+      },
+      {
+        "type": "TextSection",
+        "title": "The Impact",
+        "text": "The tool enabled more effective communication with visually impaired users, allowing us to receive concrete feedback on our solutions. This process strengthened empathy and collaboration with screen reader users and provided valuable insights into their specific needs. Personally, I gained extensive experience with screen readers, accessibility best practices, Copilot AI-assisted coding, Figma plugins, and the Vue front-end framework, which was new to me."
+      }
+    ]
   } 
 ]
