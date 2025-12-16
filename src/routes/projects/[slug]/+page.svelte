@@ -109,16 +109,16 @@
 					<p class="font-semibold">{project.categories.join(', ')}</p>
 				</div>
 				<div>
-					<p class="text-sm text-muted-foreground mb-1">Year</p>
-					<p class="font-semibold">{project.year}</p>
-				</div>
-				<div>
 					<p class="text-sm text-muted-foreground mb-1">Role</p>
 					<p class="font-semibold">{project.role}</p>
 				</div>
 				<div>
 					<p class="text-sm text-muted-foreground mb-1">Client</p>
 					<p class="font-semibold">{project.client}</p>
+				</div>
+				<div>
+					<p class="text-sm text-muted-foreground mb-1">Year</p>
+					<p class="font-semibold">{project.year}</p>
 				</div>
 			</div>
 
