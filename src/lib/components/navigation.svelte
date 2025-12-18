@@ -15,7 +15,7 @@
 </script>
 
 <nav class="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-muted">
-	<div class="px-6 md:px-12 py-4 max-w-6xl mx-auto flex items-center justify-between">
+	<div class="px-6 md:px-12 py-6 max-w-6xl mx-auto flex items-center justify-between">
 		<a href="{base}/" class="flex items-center text-xl font-bold hover:text-muted-foreground transition-colors">
 			<img src="/favicon.svg" alt="Logo" class="w-8 h-8 mr-2" />
 			<span style="font-family: 'Fira Sans', sans-serif; font-weight: 100;">vesa</span>
