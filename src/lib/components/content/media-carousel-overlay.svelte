@@ -32,7 +32,7 @@
   on:keydown={handleKey}
   on:click={(e) => e.target === overlayEl && onClose()}
 >
-  <div class="absolute top-4 left-4 text-white text-base bg-black/60 rounded px-3 py-1 select-none pointer-events-none z-10">
+  <div class="absolute top-4  left-4 text-white text-base bg-black/60 rounded px-3 py-1 select-none pointer-events-none z-10">
     {current + 1} / {items.length}
   </div>
   <button class="absolute top-4 right-4 text-white text-3xl" on:click={onClose} aria-label="Close">&times;</button>

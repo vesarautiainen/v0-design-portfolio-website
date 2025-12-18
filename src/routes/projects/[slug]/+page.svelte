@@ -17,6 +17,7 @@
 	let carouselInitialIndex = 0;
 
 	// Extract all images and videos from project.content
+	// add featured_image and project.images as well
 	function extractMediaItems(content) {
 		const items = [];
 		if (!content) return items;
@@ -64,6 +65,13 @@
 			carouselItems = extractMediaItems(project.content);
 		} else {
 			carouselItems = [];
+		}
+		// Set prev_project and next_project based on id
+		if (project) {
+			const prev = projects.find(p => p.id === project.id - 1);
+			const next = projects.find(p => p.id === project.id + 1);
+			project.prev_project = prev ? { slug: prev.slug, title: prev.title } : null;
+			project.next_project = next ? { slug: next.slug, title: next.title } : null;
 		}
 	}
 
@@ -194,22 +202,26 @@
 
 			<!-- Navigation -->
 			<div class="flex justify-between mt-16 pt-8 border-t border-muted">
-				{#if project.prev_project}
-					<a href="/projects/{project.prev_project.slug}" class="group">
-						<p class="text-sm text-muted-foreground mb-1">← Previous</p>
-						<p class="font-semibold group-hover:text-muted-foreground transition-colors">
-							{project.prev_project.title}
-						</p>
-					</a>
-				{/if}
-				{#if project.next_project}
-					<a href="/projects/{project.next_project.slug}" class="group text-right">
-						<p class="text-sm text-muted-foreground mb-1">Next →</p>
-						<p class="font-semibold group-hover:text-muted-foreground transition-colors">
-							{project.next_project.title}
-						</p>
-					</a>
-				{/if}
+				<div>
+					{#if project.prev_project}
+						<a href="/projects/{project.prev_project.slug}" class="group">
+							<p class="text-sm text-muted-foreground mb-1">← Previous</p>
+							<p class="font-semibold group-hover:text-muted-foreground transition-colors">
+								{project.prev_project.title}
+							</p>
+						</a>
+					{/if}
+				</div>
+				<div class="text-right">
+					{#if project.next_project}
+						<a href="/projects/{project.next_project.slug}" class="group">
+							<p class="text-sm text-muted-foreground mb-1">Next →</p>
+							<p class="font-semibold group-hover:text-muted-foreground transition-colors">
+								{project.next_project.title}
+							</p>
+						</a>
+					{/if}
+				</div>
 			</div>
 		</div>
 	{:else}
