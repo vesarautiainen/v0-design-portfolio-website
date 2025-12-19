@@ -68,8 +68,13 @@
 		}
 		// Set prev_project and next_project based on id
 		if (project) {
-			const prev = projects.find(p => p.id === project.id - 1);
-			const next = projects.find(p => p.id === project.id + 1);
+			// Sort projects by id
+			const sortedProjects = [...projects].sort((a, b) => a.id - b.id);
+			const currentIndex = sortedProjects.findIndex(p => p.id === project.id);
+
+			const prev = currentIndex > 0 ? sortedProjects[currentIndex - 1] : null;
+			const next = currentIndex < sortedProjects.length - 1 ? sortedProjects[currentIndex + 1] : null;
+
 			project.prev_project = prev ? { slug: prev.slug, title: prev.title } : null;
 			project.next_project = next ? { slug: next.slug, title: next.title } : null;
 		}

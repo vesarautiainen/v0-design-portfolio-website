@@ -205,9 +205,9 @@
   {
     "id": 4,
     "slug": "visual-studio-new-git-experience",
-    "title": "New Git Experience",
+    "title": "Git Version Control Experience",
     "categories": ["UX Design", "User Research"],
-    "description": "Designing a new Git version control UX",
+    "description": "Designing a new Git version control UX for Visual Studio to enhance developer productivity and collaboration.",
     "thumbnail": "/project-4/Featured-VS-Copilot.webp",
     "featured": false,
     "featured_image": "/project-4/Featured-VS-Copilot.webp",
@@ -218,7 +218,7 @@
       {
         "type": "TextSection",
         "title": "Project Overview",
-        "text": "Project 4 overview text goes here."
+        "text": "Git is the most used version control system in the world. Developers use it to manage their code changes and collaborate with other developers. Visual Studio IDE had an existing Git experience that was outdated and not user-friendly. I led the redesign effort to create make it more intuitive, efficient, and accessible for all developers."
       },
       {
         "type": "ImageSection",
