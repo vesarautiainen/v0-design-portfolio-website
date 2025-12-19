@@ -7,30 +7,30 @@
 		<div class="grid md:grid-cols-3 gap-8 mb-8">
 			<div>
 				<h3 class="font-bold mb-4">Connect</h3>
-				<div class="space-y-2">
+				<div class="space-y-2 space-x-4">
 					<a href="https://www.linkedin.com/in/vesarautiainen" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						LinkedIn
 					</a>
 					<a href="https://github.com/vesarautiainen" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						GitHub
 					</a>
-					<a href="#" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
+					<!-- <a href="#" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						X (Twitter)
-					</a>
+					</a> -->
 				</div>
 			</div>
 			<div>
 				<h3 class="font-bold mb-4">Pages</h3>
-				<div class="space-y-2">
+				<div class="space-y-2 space-x-4">
 					<a href="/" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						Home
 					</a>
 					<a href="projects" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
-						Projects
+						Work
 					</a>
-					<a href="about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
+					<!-- <a href="about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						About
-					</a>
+					</a> -->
 				</div>
 			</div>
 			<div>
