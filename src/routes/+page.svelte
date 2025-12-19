@@ -16,7 +16,7 @@
 	// 	isLoading = false;
 	// });
 
-	$: featuredProjects = projects.filter(p => p.featured === true);
+	$: featuredProjects = projects.filter(p => p.featured === true && p.show === true);
 </script>
 
 

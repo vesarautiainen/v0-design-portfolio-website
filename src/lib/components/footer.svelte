@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<div class="border-t border-muted-foreground/20 pt-8 text-sm text-muted-foreground text-center">
-			<p>&copy; {currentYear} My Design Portfolio. All rights reserved.</p>
+			<p>&copy; {currentYear} Vesa Rautiainen Design Portfolio. All rights reserved.</p>
 		</div>
 	</div>
 </footer>

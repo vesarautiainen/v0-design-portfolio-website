@@ -6,7 +6,7 @@
 
 	const navItems = [
 		{ label: 'Work', href: '/projects' },
-		{ label: 'About', href: `/about` }
+		//{ label: 'About', href: `/about` }
 	];
 
 	function isActive(href) {

@@ -1,6 +1,5 @@
 <script>
 	let { project } = $props();
-	console.log('ProjectCard received project:', project);
 </script>
 
 <div class="group cursor-pointer overflow-hidden rounded-lg">

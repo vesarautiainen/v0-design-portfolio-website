@@ -6,6 +6,7 @@
     "categories": ["UX Design", "Prototyping", "UI Development"],
     "description": "Canonical Ltd. started developing Ubuntu for mobile devices. As part of this effort, I designed and prototyped an application switcher for Ubuntu Touch OS.",
     "thumbnail": "/project-1/composition.webp",
+    "show": true,
     "featured": false,
     "featured_image": "/project-1/composition.webp",
     "year": "2015",
@@ -81,6 +82,7 @@
     "categories": ["UX Design", "Accessibility"],
     "description": "Designing accessible change indicators for Visual Studio to enhance code management for developers with disabilities.",
     "thumbnail": "/project-2/thumb.webp",
+    "show": true,
     "featured": false,
     "featured_image": "/project-2/featured.webp",
     "year": 2021  ,
@@ -180,6 +182,7 @@
     "categories": ["UX Design", "AI", "Prototyping"],
     "description": "Designing Copilot AI integrations across developer tools",
     "thumbnail": "/project-3/Featured-VS-Copilot.webp",
+    "show": true,
     "featured": false,
     "featured_image": "/project-3/Featured-VS-Copilot.webp",
     "year": 2025,
@@ -192,13 +195,14 @@
         "text": "Aligned GH Copilot integrations across toolsets throughout Visual Studio. I navigated competing constraints across different feature teams and aligned numerous stakeholders."
       },
       {
-        "type": "ImageSection",
-        "title": "UX Problem",
-        "image": "/project-3/problem.webp",
-        "alt": "@todo: Add alt text",
-        "caption": "UI full of inconsistencies confusing users, causing frustration, inefficiency, and discovery issues.",
-        "align": "right",
+        "type": "TextSection",
+        "title": "Project Overview",
         "text": "The user experience in different Visual Studio tools was inconsistent, didn't follow design guidelines, and lacked understanding of end-to-end scenarios. Teams worked in silos, leading to fragmented experiences that confused users and hindered productivity. There was a need to unify the design language, improve usability, and ensure accessibility across all Copilot integrations."
+      },
+      {
+        "type": "TextSection",
+        "title": "Coming Soon...",
+        "text": "Examples of the design work will be added here soon. Thanks for you patience! If interested in learning more right now, reach out to me directly via LinkedIn or email."
       }
     ] 
   },
@@ -209,6 +213,7 @@
     "categories": ["UX Design", "User Research", "Prototyping"],
     "description": "Designing a new Git version control UX for Visual Studio to enhance developer productivity and collaboration.",
     "thumbnail": "/project-4/Featured-VS-Copilot.webp",
+    "show": false,
     "featured": false,
     "featured_image": "/project-4/Featured-VS-Copilot.webp",
     "year": 2020,
@@ -220,6 +225,7 @@
         "title": "Project Overview",
         "text": "Git is the most used version control system in the world. Developers use it to manage their code changes and collaborate with other developers. Visual Studio IDE had an existing Git experience that was outdated and not user-friendly. I led the redesign effort to create make it more intuitive, efficient, and accessible for all developers."
       },
+      
       {
         "type": "ImageSection",
         "title": "UX Problem",
@@ -228,6 +234,11 @@
         "caption": "Multiple problems identified in the existing version control interface.",
         "align": "right",
         "text": "The version control interface in Visual Studio had several usability issues that hindered developers' productivity. Key problems included unclear status indicators, a cluttered layout, and inefficient workflows for staging and committing changes."
+      },
+      {
+        "type": "TextSection",
+        "title": "Coming Soon...",
+        "text": "Examples of the design work will be added here soon. Thanks for you patience! If interested in learning more right now, reach out to me directly via LinkedIn or email."
       },
       {
         "type": "ImageSection",
@@ -261,6 +272,7 @@
     "categories": ["Prototyping", "Interaction Design", "Tooling", "UI Development"],
     "description": "Gesture based indicator panel interactions for Ubuntu Touch OS.", 
     "thumbnail": "/project-5/thumb.webp",
+    "show": true,
     "featured": true,
     "featured_image": "/project-5/featured.webp",
     "year": 2014,
@@ -318,6 +330,7 @@
     "thumbnail": "/project-6/thumb.webp",
     "featured": true,
     "featured_image": "/project-6/featured.webp",
+    "show": true,
     "year": 2023,
     "role": "Principal Designer",
     "client": "Microsoft Corporation",

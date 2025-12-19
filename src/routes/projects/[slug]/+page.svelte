@@ -68,8 +68,10 @@
 		}
 		// Set prev_project and next_project based on id
 		if (project) {
+			// filter only shown projects
+			const shownProjects = projects.filter(p => p.show);
 			// Sort projects by id
-			const sortedProjects = [...projects].sort((a, b) => a.id - b.id);
+			const sortedProjects = [...shownProjects].sort((a, b) => a.id - b.id);
 			const currentIndex = sortedProjects.findIndex(p => p.id === project.id);
 
 			const prev = currentIndex > 0 ? sortedProjects[currentIndex - 1] : null;

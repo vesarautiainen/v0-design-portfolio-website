@@ -16,10 +16,13 @@
 	// });
 
 	$: filteredProjects = filter === 'all'
-		? projects
-		: projects.filter(p => Array.isArray(p.categories) 
-			? p.categories.includes(filter)
-			: p.categories === filter);
+		? projects.filter(p => p.show)
+		: projects.filter(p =>
+			p.show &&
+			(Array.isArray(p.categories)
+				? p.categories.includes(filter)
+				: p.categories === filter)
+		);
 </script>
 
 <svelte:head>
