@@ -196,13 +196,31 @@
       },
       {
         "type": "TextSection",
-        "title": "Project Overview",
+        "title": "UX Challenge",
         "text": "The user experience in different Visual Studio tools was inconsistent, didn't follow design guidelines, and lacked understanding of end-to-end scenarios. Teams worked in silos, leading to fragmented experiences that confused users and hindered productivity. There was a need to unify the design language, improve usability, and ensure accessibility across all Copilot integrations."
       },
       {
         "type": "TextSection",
-        "title": "Coming Soon...",
-        "text": "Examples of the design work will be added here soon. Thanks for you patience! If interested in learning more right now, reach out to me directly via LinkedIn or email."
+        "title": "The UX Approach and Process",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "type": "ImageSection",
+        "title": "Editor - Rename Suggestions",
+        "text": "• Provide AI suggestions automatically without blocking the underlying UI.\n• Allow users to opt out and turn off the suggestions permanently. \n• Prevent unnecessary AI costs by cancelling LLM (Large Language Model) call if the user starts typing.\n• Provide intuitive keyboard navigation for power users.\n• Maintain consistency with other Copilot integrations in Visual Studio.",
+        "image": "/project-3/editor-rename-suggestions.gif",
+        "alt": "Image showing Editor - Rename Suggestions in responsive layout.  ",
+        "caption": "Rename Suggestions Prototype for engineering handoff.",
+        "align": "left"
+      },
+      {
+        "type": "ImageSection",
+        "title": "Diagnostics - Visualizer",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image": "/project-3/diagnostics-visualizer.gif",
+        "alt": "Alt text  ",
+        "caption": "Caption text",
+        "align": "right"
       }
     ] 
   },
