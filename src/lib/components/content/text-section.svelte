@@ -4,7 +4,7 @@ export let text: string;
 import { marked } from 'marked';
 </script>
 
-<section class="my-8">
+<section class="my-12">
   {#if title !== ""}
     <h2 class="text-2xl font-bold mb-4">{title}</h2>
   {/if}

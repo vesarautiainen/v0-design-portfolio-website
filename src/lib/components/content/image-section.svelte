@@ -14,7 +14,7 @@
 
 
 
-<section class="my-8">
+<section class="my-12">
   {#if align === 'below'}
     <div class="flex flex-col items-start">
       {#if title}
@@ -36,13 +36,13 @@
             />
           </button>
           {#if caption}
-            <div class="text-xs text-muted-foreground mt-2 text-left">{caption}</div>
+            <div class="text-xs text-muted-foreground mt-2 text-center">{caption}</div>
           {/if}
         </div>
       {/if}
     </div>
   {:else if align === 'right'}
-    <div class="flex flex-col md:flex-row-reverse items-start gap-6">
+    <div class="flex flex-col md:flex-row-reverse items-start gap-8">
       <div class="md:w-1/2 w-full flex-shrink-0">
         {#if image}
           <button type="button" class="block p-0 bg-transparent border-none" style="box-shadow:none" aria-label="Open image in carousel"
@@ -69,7 +69,7 @@
       </div>
     </div>
   {:else} <!-- align === 'left' or fallback -->
-    <div class="flex flex-col md:flex-row items-start gap-6">
+    <div class="flex flex-col md:flex-row items-start gap-8">
       <div class="md:w-1/2 w-full flex-shrink-0">
         {#if image}
           <button type="button" class="block p-0 bg-transparent border-none" style="box-shadow:none" aria-label="Open image in carousel"

@@ -192,35 +192,69 @@
       {
         "type": "TextSection",
         "title": "Project Overview",
-        "text": "Aligned GH Copilot integrations across toolsets throughout Visual Studio. I navigated competing constraints across different feature teams and aligned numerous stakeholders."
+        "text": "I owned and drove the GitHub Copilot integrations across toolsets throughout Visual Studio. I designed for optimised end-to-end experiences that boost developer productivity while navigating competing constraints across different feature teams, and aligning numerous stakeholders."
       },
       {
         "type": "TextSection",
         "title": "UX Challenge",
-        "text": "The user experience in different Visual Studio tools was inconsistent, didn't follow design guidelines, and lacked understanding of end-to-end scenarios. Teams worked in silos, leading to fragmented experiences that confused users and hindered productivity. There was a need to unify the design language, improve usability, and ensure accessibility across all Copilot integrations."
-      },
-      {
-        "type": "TextSection",
-        "title": "The UX Approach and Process",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "text": "Key challenges included:\n\n• Inconsistent UI elements and interactions across different tools.\n• Lack of clear user flows and guidance for using Copilot features.\n• Lack of understanding the high-value end-to-end scenarios.\n• Fragmented experiences that confused users and hindered productivity.\n\n I collaborated closely with product managers, engineers, and other designers to identify pain points and opportunities for improvement and break silos between different teams."
       },
       {
         "type": "ImageSection",
-        "title": "Editor - Rename Suggestions",
+        "title": "Example: Editor - Rename Suggestions",
         "text": "• Provide AI suggestions automatically without blocking the underlying UI.\n• Allow users to opt out and turn off the suggestions permanently. \n• Prevent unnecessary AI costs by cancelling LLM (Large Language Model) call if the user starts typing.\n• Provide intuitive keyboard navigation for power users.\n• Maintain consistency with other Copilot integrations in Visual Studio.",
         "image": "/project-3/editor-rename-suggestions.gif",
         "alt": "Image showing Editor - Rename Suggestions in responsive layout.  ",
-        "caption": "Rename Suggestions Prototype for engineering handoff.",
-        "align": "left"
+        "caption": "Rename Suggestions prototype for engineering handoff.",
+        "align": "right"
       },
       {
         "type": "ImageSection",
-        "title": "Diagnostics - Visualizer",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "title": "Example: Diagnostics - Visualizer",
+        "text": "With the updated UI user can write a natural language query and get relevant diagnostics data visualized directly in the code editor. This helps developers quickly understand and address issues in their code without needing to learn complex query languages or navigate through multiple tools.",
         "image": "/project-3/diagnostics-visualizer.gif",
         "alt": "Alt text  ",
-        "caption": "Caption text",
+        "caption": "User can toggle on the AI prompt and refine the current expression with natural language instructions.",
+        "align": "below"
+      },
+      {
+        "type": "TextSection",
+        "title": "",
+        "text": "Prototypes like this are at the core of my design process. They help to validate the designs early with users and stakeholders, and also serve as a clear communication tool for engineering handoff. This one was made directly in the Figma design tool using interactive components and animation features."
+      },
+      {
+        "type": "ImageSection",
+        "title": "UX Guidelines",
+        "text": "Copilot partner teams worked in silos which had resulted fragmented and inconsistent UXexperiences. I created UX guidelines: \n\n• Established a unified design language for Copilot integrations across Visual Studio.\n• Empowered teams to make informed design decisions without designer involvement.\n• Strengthened cross-team collaboration and end-to-end user experience.",
+        "image": "/project-3/ux-guidelines.webp",
+        "alt": "An image of the table of contents for the Copilot UX Guidelines document.",
+        "caption": "Table of contents for the Copilot Partner UX Guidelines.",
         "align": "right"
+      },
+      {
+        "type": "TextSection",
+        "title": "More designs...",
+        "text": "As being responsible for all Copilot integrations in Visual Studio, I created many more designs for different teams. Here are a few more examples:"
+      },
+      {
+        "type": "ImageGallery",
+        "images": [
+          {
+            "src": "/project-3/copilot-pr-description.webp",
+            "alt": "Design mockup showing the flow of using Copilot PR Description.",
+            "caption": "Version Control - Copilot PR Description flow."
+          },
+          {
+            "src": "/project-3/local-ai-review.webp",
+            "alt": "Design mockup 2 showing the new indicator interactions.",
+            "caption": "Version Control - Main UI elements of Local AI Review flow."
+          },
+          {
+            "src": "/project-3/content-exclusion.webp",
+            "alt": "Design file screenshot showing high-level view to content exclusion guidelines.",
+            "caption": "Content exclusion was larger cross-team AI design task where I managed to establish clear UX guidelines and communicate those across multiple teams."
+          }
+        ]
       }
     ] 
   },
@@ -255,8 +289,8 @@
       },
       {
         "type": "TextSection",
-        "title": "Coming Soon...",
-        "text": "Examples of the design work will be added here soon. Thanks for you patience! If interested in learning more right now, reach out to me directly via LinkedIn or email."
+        "title": "UX Process",
+        "text": "• I created design principles to guide the redesign process and to frame the decision making process with stakeholders.\n •"
       },
       {
         "type": "ImageSection",
