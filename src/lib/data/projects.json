@@ -231,7 +231,7 @@
     "categories": ["UX Design", "User Research", "Prototyping"],
     "description": "Designing a new Git version control UX for Visual Studio to enhance developer productivity and collaboration.",
     "thumbnail": "/project-4/Featured-VS-Copilot.webp",
-    "show": false,
+    "show": true,
     "featured": false,
     "featured_image": "/project-4/Featured-VS-Copilot.webp",
     "year": 2020,
@@ -273,7 +273,7 @@
         "image": "/project-4/graph-tags.gif",
         "alt": "Image showing Git Graph Tags in responsive layout.  ",
         "caption": "Tags are responsive and adjusting to the column width.",
-        "align": "right",
+        "align": "below",
         "text": "Add text about Git Graph Tags here. The description needs to be long enough to show how the image aligns to the right of the text content."
       },
       {
