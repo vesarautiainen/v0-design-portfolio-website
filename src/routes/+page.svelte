@@ -32,7 +32,7 @@
 			Product Development Creativity Unleashed
 		</h1>
 		<p class="text-lg md:text-xl text-muted-foreground max-w-2xl text-pretty">
-			I turn complex problems into intuitive, user-centered solutions. I bring a blend of UX, developer skills, and product thinking to shape ideas into polished digital experiences. I love combining practicality with creativity to push the design forward.
+			I turn complex problems into intuitive, user-centered solutions by blending UX, development, and product thinking. I enjoy pairing practicality with creativity to push designs forward and ship meaningful digital products.
 		</p>
 	</div>
 </section>

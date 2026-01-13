@@ -16,9 +16,8 @@ export default {
     }),
 
     paths: {
-      base: process.env.NODE_ENV === 'production'
-        ? `/${repo}`
-        : ''
-    }
+		//base: process.env.NODE_ENV === 'production' ? `/${repo}` : ''
+		base: '', //dev ? '' : `/${repo}`,
+	},
   }
 };
