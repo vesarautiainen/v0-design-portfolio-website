@@ -281,7 +281,7 @@
       {
         "type": "ImageSection",
         "title": "UX Problem",
-        "image": "/project-4/problem.webp",
+        "image": "/tobeadded.webp",
         "alt": "Version control interface with multiple issues highlighted.",
         "caption": "Multiple problems identified in the existing version control interface.",
         "align": "right",
@@ -295,7 +295,7 @@
       {
         "type": "ImageSection",
         "title": "Research Findings",
-        "image": "/project-4/research.webp",
+        "image": "/tobeadded.webp",
         "alt": "Affinity diagram showing user research insights.",
         "caption": "Affinity diagram showing user research insights.",
         "align": "left",
