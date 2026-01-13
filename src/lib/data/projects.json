@@ -197,7 +197,7 @@
       {
         "type": "TextSection",
         "title": "UX Challenge",
-        "text": "Key challenges included:\n\n• Inconsistent UI elements and interactions across different tools.\n• Lack of clear user flows and guidance for using Copilot features.\n• Lack of understanding the high-value end-to-end scenarios.\n• Fragmented experiences that confused users and hindered productivity.\n\n I collaborated closely with product managers, engineers, and other designers to identify pain points and opportunities for improvement and break silos between different teams."
+        "text": "Key challenges included:\n\n• The most product teams worked in silos and lacked of understanding the high-value end-to-end scenarios.\n• Fragmented experiences and inconsistent UI elements and language confused users and hindered productivity.\n• Introducing new powerful AI functionality on high-density UI can be challenging so that it's discoverable and understandable but doesn't mess with user's muscle memory. \n\n I collaborated closely with product managers, engineers, and other Copilot designers to identify pain points find opportunities for improvement and break silos between different teams."
       },
       {
         "type": "ImageSection",
@@ -253,6 +253,21 @@
             "src": "/project-3/content-exclusion.webp",
             "alt": "Design file screenshot showing high-level view to content exclusion guidelines.",
             "caption": "Content exclusion was larger cross-team AI design task where I managed to establish clear UX guidelines and communicate those across multiple teams."
+          },
+          {
+            "src": "/project-3/doc-comments.gif",
+            "alt": "GIF of the doc comments Ambient AI prototype in action.",
+            "caption": "Ambient AI - Doc Comments feature provides documentation on the fly based on the function code context."
+          },
+          {
+            "src": "/project-3/generate-method.webp",
+            "alt": "Generate method Ambient AI feature visualised in Visual Studio.",
+            "caption": "Ambient AI - Generate Method feature helps developers quickly create new methods based on the existing code context."
+          },
+          {
+            "src": "/project-3/performance-profiler.webp",
+            "alt": "Diagnostics Performance profiler feature design mockup.",
+            "caption": " A new diagnostics performance profiler launch page that provides AI recommended tools and allows natural language queries for finding relevant performance issues."
           }
         ]
       }
@@ -351,8 +366,8 @@
           },
           {
             "src": "/project-5/variations.webp",
-            "alt": "Design mockup 2 showing the new indicator interactions.",
-            "caption": "Design mockup 2 showing the new indicator interactions."
+            "alt": "Collection of design mockups showing multiple layout and visual variations.",
+            "caption": "Multiple layout and visual variations were explored to find the optimal solution."
           },
           {
             "src": "/project-5/spec.webp",

@@ -27,11 +27,11 @@
 
 <!-- Hero Section -->
 <section class="px-6 md:px-12 py-20 md:py-28 max-w-6xl mx-auto">
-	<div class="space-y-4">
+	<div class="space-y-12">
 		<h1 class="text-4xl md:text-6xl font-bold text-balance">
-			Product Development Creativity Unleashed
+			Hi, I'm Vesa — a Product Designer
 		</h1>
-		<p class="text-lg md:text-xl text-muted-foreground max-w-2xl text-pretty">
+		<p class="text-lg md:text-xl text-muted-foreground max-w-3xl text-pretty">
 			I turn complex problems into intuitive, user-centered solutions by blending UX, development, and product thinking. I enjoy pairing practicality with creativity to push designs forward and ship meaningful digital products.
 		</p>
 	</div>
