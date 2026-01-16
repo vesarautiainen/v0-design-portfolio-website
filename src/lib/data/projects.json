@@ -4,7 +4,7 @@
     "slug": "ubuntu-application-switcher",
     "title": "Ubuntu Application Switcher",
     "categories": ["UX Design", "Prototyping", "UI Development", "Tooling"],
-    "description": "Canonical Ltd. started developing Ubuntu for mobile devices. As part of this effort, I designed and prototyped an application switcher for Ubuntu Touch OS.",
+    "description": "Canonical Ltd. developed Ubuntu Linux operating system for mobile devices. As part of this effort, I designed and prototyped an application switcher for Ubuntu Touch OS.",
     "thumbnail": "/project-1/composition.webp",
     "show": true,
     "featured": true,
@@ -16,7 +16,7 @@
       {
         "type": "TextSection",
         "title": "The UX Challenge",
-        "text": "Application switching is one of the most often performed tasks in both mobile and desktop operating systems. Hence it needs to be a fluid and frictionless interaction. For this project the main requirements were: \n\n• Full convergence: the same switcher would need to work on phone, tablet and PC desktop. \n• Needs to handle both windowed and non-windowed environments. \n• Multiple workspace support needs to be taken into account. \n• Needs to support all available input types: touch, pointer and keyboard. \n• Single code base approach (stakeholder and engineering requirement). \n• The existing design relying on stacked cards needs to be taken into consideration. \n\n The main UX challenges:\n • How to create an adapting layout that transforms andcovers all use cases.\n • Creating consistent set of transitions and animations which would also be delightful to use and reinforce user’s metal model of the system.\n • Application window size can be arbitrary and vary between the windows simultaneously on the screen.\n • Horizontal space is limited but the design needs to scale to support 0-N application and 0-N workspaces."
+        "text": "Application switching is one of the most often performed tasks in both mobile and desktop operating systems. Hence it needs to be a fluid and frictionless interaction. For this project the main requirements were: \n\n• Full convergence: the same switcher would need to work on phone, tablet and PC desktop. \n• Needs to handle both windowed and non-windowed environments. \n• Multiple workspace support needs to be taken into account. \n• Needs to support all available input types: touch, pointer and keyboard. \n• Single code base approach (stakeholder and engineering requirement). \n• The existing design relying on stacked cards needs to be taken into consideration. \n\n **The main challenges:**\n • How to create an adapting layout that transforms andcovers all use cases.\n • Creating consistent set of transitions and animations which would also be delightful to use and reinforce user’s metal model of the system.\n • Application window size can be arbitrary and vary between the windows simultaneously on the screen.\n • Horizontal space is limited but the design needs to scale to support 0-N application and 0-N workspaces."
       },
       {
         "type": "TextSection",
@@ -64,7 +64,7 @@
         "image": "/project-1/convergence.webp",
         "alt": "An example image from the project.",
         "caption": "The same design and codebase works across phone, tablet and desktop form factors.",
-        "align": "right",
+        "align": "below",
         "text": "The result layout is fully responsive that automatically adjusts its element sizes, margins and visibility while maintaining balanced look and feel. Application windows are cropped in to a square shape with suitable cropping algorithm and application icon and label were added to maximise application identifiability. The final design supports following functionality: \n\n • Application switching. \n• Closing applications \n• Moving applications between workspaces \n• Closing, reordering and merging workspaces \n• Focusing on to another workspace. "
       },
       
@@ -146,7 +146,7 @@
       {
         "type": "TextSection",
         "title": "Final Design and Impact",
-        "text": "The final design was successfully implemented in Visual Studio 2022 version 17.3 and later. The design met the all the set objectives and received positive feedback from users, particularly those with visual impairments. \n\n I received a patent award for the design work. \n\nSome users still preferred the old design due to familiarity, and we provided an option to switch back to the previous design if desired. Even then, the yellow and green color values were updated for better contrast and accessibility."
+        "text": "The final design was successfully implemented in Visual Studio 2022 version 17.3 and later. The design met the all the set objectives and received positive feedback from users, particularly those with visual impairments. \n\n I submitted a patent application which was accepted and I received a patent award for the design work. \n\nSome users still preferred the old design due to familiarity, and we provided an option to switch back to the previous design if desired. Even then, the yellow and green color values were updated for better contrast and accessibility."
       },
       {
         "type": "ImageGallery",
@@ -234,7 +234,7 @@
       {
         "type": "TextSection",
         "title": "More designs...",
-        "text": "As being responsible for all Copilot integrations in Visual Studio, I created many more designs for different teams. Here are a few more examples:"
+        "text": "While leading the design efforts for all Copilot integrations in Visual Studio, I created numerous designs across multiple teams. Here are a few additional examples:"
       },
       {
         "type": "ImageGallery",
@@ -296,7 +296,7 @@
       {
         "type": "ImageSection",
         "title": "UX Problem",
-        "image": "/tobeadded.webp",
+        "image": "/tba.webp",
         "alt": "Version control interface with multiple issues highlighted.",
         "caption": "Multiple problems identified in the existing version control interface.",
         "align": "right",
@@ -310,20 +310,21 @@
       {
         "type": "ImageSection",
         "title": "Research Findings",
-        "image": "/tobeadded.webp",
+        "image": "/tba.webp",
         "alt": "Affinity diagram showing user research insights.",
         "caption": "Affinity diagram showing user research insights.",
         "align": "left",
         "text": "Together with program managers and researchers, we conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control system. Key findings highlighted the need for clearer visual cues, simplified workflows, and better integration with other development tools."
       },
       {
-        "type": "ImageSection",
+        "type": "TextSection",
         "title": "Git Graph Tags",
-        "image": "/project-4/graph-tags.gif",
-        "alt": "Image showing Git Graph Tags in responsive layout.  ",
-        "caption": "Tags are responsive and adjusting to the column width.",
-        "align": "below",
-        "text": "Add text about Git Graph Tags here. The description needs to be long enough to show how the image aligns to the right of the text content."
+        "text": "A video of a prototype illustrating how the Git history graph tags behave and scale when the table column width varies. This prototype was done in Figma and was part of developer hand off."
+      },
+      {
+        "type": "EmbeddedVideo",
+        "url": "https://vimeo.com/1154602991?fl=pl&fe=sh",
+        "caption": "Sizing rules for tags ensure that they remain legible and usable across different screen sizes and user preferences."
       },
       {
         "type": "TextSection",
@@ -379,7 +380,7 @@
       {
         "type": "EmbeddedVideo",
         "url": "https://vimeo.com/1146523128?fl=tl&fe=ec",
-        "caption": "Functional prototype demonstrating the new indicator interactions."
+        "caption": "Functional QML prototype (JSON-like syntax for UI structure with JavaScript for logic) demonstrating the new indicator interactions."
       },
       {
         "type": "TextSection",
@@ -433,5 +434,94 @@
         "text": "The tool enabled more effective communication with visually impaired users, allowing us to receive concrete feedback on our solutions. This process strengthened empathy and collaboration with screen reader users and provided valuable insights into their specific needs. Personally, I gained extensive experience with screen readers, accessibility best practices, Copilot AI-assisted coding, Figma plugins, and the Vue front-end framework, which was new to me."
       }
     ]
-  } 
+  },
+  {
+    "id": 7,
+    "slug": "pull-requests-in-visual-studio", 
+    "title": "Pull Requests in Visual Studio - Design Process Showcase", 
+    "categories": ["UX Design", "User Research", "AI"],
+    "description": "I led the design of complex UI from the initial concepts to the final implementation to find the optimal solution for code review in Visual Studio IDE.", 
+    "thumbnail": "/project-7/thumb-pr.webp",
+    "show": true,
+    "featured": true,
+    "featured_image": "/project-7/thumb-pr.webp",
+    "year": 2024,
+    "role": "Principal Designer",
+    "client": "Microsoft Corporation",
+    "content":[
+      {
+        "type": "TextSection",
+        "title": "The Objective",
+        "text": "A pull request (PR) is a collaborative tool used in version control systems like Git to propose and discuss changes to a codebase. Developers create pull requests to request that their changes be reviewed and merged into the main codebase by other team members. \n\nVisual Studio developer environment lacked all pull request capabilities and the feature was one of the highest request items from the community. \n\nMy task was to design a seamless pull request experience within Visual Studio IDE, enabling developers to efficiently review, comment on, and merge code changes without leaving their development environment."
+      },
+      {
+        "type": "TextSection",
+        "title": "User Research",
+        "text": "I started benchmarking existing experiences. At the same time I wrote and collected customer and problem hypothesis and created some lo-fidelity wireframes to support user research and spark the discussion with our customers."
+      },
+      {
+        "type": "ImageGallery",
+        "images": [
+          {
+            "src": "/project-7/wireframes.webp",
+            "alt": "Low-fidelity wireframes used in initial concepting and user research.",
+            "caption": "Low-fidelity wireframes used in initial concepting and user research."
+          },
+          {
+            "src": "/project-7/hypos.webp",
+            "alt": "A set of customer and problem hypotheses to validate with users.",
+            "caption": "Based on my research and understanding of the problem space, I created a set of hypotheses to validate with users."
+          }
+        ]
+      },
+      {
+        "type": "TextSection",
+        "title": "",
+        "text": "We interviewed developers from various backgrounds and experience levels to understand their pain points, needs, and preferences when it comes to code review and collaboration. My partner product manager conducted the actual interviews while I focused on synthesizing the findings and identifying key themes and insights."
+      },
+      {
+        "type": "ImageSection",
+        "title": "Research Findings",
+        "image": "/project-7/roles.webp",
+        "alt": "Affinity diagram showing user research insights.",
+        "caption": "Affinity diagram showing user research insights.",
+        "align": "below",
+        "text": "Key findings from user research highlighted the need for seamless integration, efficient navigation, and robust collaboration features within the IDE. Developers expressed a desire for a streamlined workflow that minimizes context switching and enhances productivity during code reviews. \n\n_\"I want to take full advantage of the Visual Studio while reviewing or fixing issues in the PR”_ \n\n_“As an author I want to use the IDE to fix the PR comments.”_\n\n_“I want to have the PR open on a separate monitor while working on PR changes”_\""
+      },
+      {
+        "type": "TextSection",
+        "title": "UX Challenges",
+        "text": "• Full pull request experience contains a lot of UI which would require lots of engineering work. \n• There were many opinions on what features should be included in the first version and how the UI should look like in Visual Studio.\n• Simultaneously designing for both GitHub and Azure DevOps pull requests as well as Visual Studio Windows and Visual Studio Code complicated the design process. \n• How to provide the maximum amount of screen real estate for efficient code review?"
+      },
+      {
+        "type": "TextSection",
+        "title": "Design Iterations",
+        "text": "I created multiple design iterations to explore different approaches to the pull request experience. Each iteration focused on addressing specific pain points identified during user research, such as navigation, commenting, and merging workflows. I gathered feedback from users and stakeholders to refine the designs and ensure they met the needs of developers."
+      },
+      {
+        "type": "ImageGallery",
+        "images": [
+          {
+            "src": "/tba.webp",
+            "alt": "Pull request design iteration 1",
+            "caption": "Pull request design iteration 1"
+          }
+        ]
+      },
+      {
+        "type": "TextSection",
+        "title": "UX Challenges",
+        "text": "• Full pull request experience contains a lot of UI which would require lots of engineering work. \n• There were many opinions on what features should be included in the first version and how the UI should look like in Visual Studio.\n• Simultaneously designing for both GitHub and Azure DevOps pull requests as well as Visual Studio Windows and Visual Studio Code complicated the design process. \n• How to provide the maximum amount of screen real estate for efficient code review?"
+      },
+      {
+        "type": "ImageSection",
+        "title": "Final Design and Phased Rollout",
+        "image": "/project-7/pullrequest-featured.webp",
+        "alt": "The design mocup showing the final pull request experience in Visual Studio.",
+        "caption": "Final design",
+        "align": "below",
+        "text": "The final design consisted of... "
+      }
+    ]
+  }
 ]
