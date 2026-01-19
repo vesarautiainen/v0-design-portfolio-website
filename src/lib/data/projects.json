@@ -392,7 +392,7 @@
   {
     "id": 6,
     "slug": "screenreader-plugin-for-figma",
-    "title": "Figma Screen Reader Plugin", 
+    "title": "Figma Plugin - Screen Reader Tool",
     "categories": ["Tooling", "Accessibility", "UI Development"],
     "description": "Figma plugin to increase design workshop accessibility and productivity.", 
     "thumbnail": "/project-6/thumb.webp",
@@ -452,12 +452,12 @@
       {
         "type": "TextSection",
         "title": "The Objective",
-        "text": "A pull request (PR) is a collaborative tool used in version control systems like Git to propose and discuss changes to a codebase. Developers create pull requests to request that their changes be reviewed and merged into the main codebase by other team members. \n\nVisual Studio developer environment lacked all pull request capabilities and the feature was one of the highest request items from the community. \n\nMy task was to design a seamless pull request experience within Visual Studio IDE, enabling developers to efficiently review, comment on, and merge code changes without leaving their development environment."
+        "text": "A pull request (PR) is a collaborative tool used in version control systems like Git to propose and discuss changes to a codebase. Developers create pull requests to request that their changes be reviewed and merged into the main codebase by other team members. \n\nVisual Studio developer environment lacked all pull request capabilities and the feature was one of the highest request items among the community. \n\nMy task was to design a seamless pull request experience within Visual Studio IDE, enabling developers to efficiently review, comment on, fix comments, and merge code changes without leaving their development environment."
       },
       {
         "type": "TextSection",
         "title": "User Research",
-        "text": "I started benchmarking existing experiences. At the same time I wrote and collected customer and problem hypothesis and created some lo-fidelity wireframes to support user research and spark the discussion with our customers."
+        "text": "I started with competitive analysis and benchmarking the user flows in existing experiences. At the same time I wrote and collected customer and problem hypothesis and created some lo-fidelity wireframes to support design communications, user research and spark the discussion with our customers."
       },
       {
         "type": "ImageGallery",
@@ -494,8 +494,12 @@
         "text": "• Full pull request experience contains a lot of UI which would require lots of engineering work. \n• There were many opinions on what features should be included in the first version and how the UI should look like in Visual Studio.\n• Simultaneously designing for both GitHub and Azure DevOps pull requests as well as Visual Studio Windows and Visual Studio Code complicated the design process. \n• How to provide the maximum amount of screen real estate for efficient code review?"
       },
       {
-        "type": "TextSection",
+        "type": "ImageSection",
         "title": "Design Iterations",
+        "image": "/project-7/polished-concept.webp",
+        "alt": "A polished design concept with pull request experience in Visual Studio.",
+        "caption": "A polished design concept",
+        "align": "below",
         "text": "I created multiple design iterations to explore different approaches to the pull request experience. Each iteration focused on addressing specific pain points identified during user research, such as navigation, commenting, and merging workflows. I gathered feedback from users and stakeholders to refine the designs and ensure they met the needs of developers."
       },
       {
@@ -507,11 +511,6 @@
             "caption": "Pull request design iteration 1"
           }
         ]
-      },
-      {
-        "type": "TextSection",
-        "title": "UX Challenges",
-        "text": "• Full pull request experience contains a lot of UI which would require lots of engineering work. \n• There were many opinions on what features should be included in the first version and how the UI should look like in Visual Studio.\n• Simultaneously designing for both GitHub and Azure DevOps pull requests as well as Visual Studio Windows and Visual Studio Code complicated the design process. \n• How to provide the maximum amount of screen real estate for efficient code review?"
       },
       {
         "type": "ImageSection",
