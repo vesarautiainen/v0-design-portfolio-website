@@ -483,15 +483,15 @@
         "type": "ImageSection",
         "title": "Research Findings",
         "image": "/project-7/roles.webp",
-        "alt": "Affinity diagram showing user research insights.",
-        "caption": "Affinity diagram showing user research insights.",
+        "alt": "An image of research finding: Two main roles and their jobs in pull request flow.",
+        "caption": "Two main roles and their jobs in pull request flow.",
         "align": "below",
-        "text": "Developers expressed a desire for a streamlined workflow that minimizes context switching and enhances productivity during code reviews. It became clear how the user role (author vs reviewer) defines which pull request features are the most relevant in the coding environment. \n\n Some user comments: \n\n_\"I want to create my pull requests in the IDE right after finishing my code”_\n\n_\"I want to take full advantage of the Visual Studio while reviewing or fixing issues in the PR”_ \n\n_“As an author I want to use the IDE to fix the PR comments.”_\n\n_“I want to have the PR open on a separate monitor while working on PR changes”_\""
+        "text": "Developers expressed a desire for a streamlined workflow that minimizes context switching and enhances productivity during code reviews. It became clear how the user role (author vs reviewer) defines which pull request features are the most relevant in the coding environment. \n\n Some user comments: \n\n_\"I want to create my pull requests in the IDE right after finishing my code”_\n\n_\"I want to take full advantage of the Visual Studio while reviewing or fixing issues in the PR”_ \n\n_“As an author I want to use the IDE to fix the PR comments.”_\n\n_“I want to have the PR open on a separate monitor while working on PR changes”_\"”_\n\n_\"Notifications during coding mostly just annoy me and break my flow”_"
       },
       {
         "type": "TextSection",
-        "title": "UX Challenges",
-        "text": "• Full pull request experience contains a lot of UI which would require lots of engineering work. \n• There were many opinions on what features should be included in the first version and how the UI should look like in Visual Studio.\n• Simultaneously designing for both GitHub and Azure DevOps pull requests as well as Visual Studio Windows and Visual Studio Code complicated the design process. \n• How to provide the maximum amount of screen real estate for efficient code review?"
+        "title": "Open Questions and UX Challenges",
+        "text": "User testing provided answers to bigger questions and clarity to where to get started and what features to prioritize. Yet, the largest portion of the UI design work was still ahead and I had plenty of questions to find answers for: \n\n • Do we need to include all the pull request capabilities? If not what do we pick and why? \n • What is the MVP design and what is the Northstar design? How do we get seamlessly from one to another? \n• How to ensure that the selected design works consistently with the existing GitHub and Azure DevOps pull request experiences from iconography, language and UI elements perspective. \n• What exactly the coherent design looks like that works in two different products; Visual Studio Windows and Visual Studio Code. Where can the design differ?\n• What is the most preferred layout option(s) to support core user flows, how to provide the maximum amount of screen real estate for efficient code review, and how to best integrate all that to the existing version control UI?"
       },
       {
         "type": "ImageSection",
@@ -500,26 +500,34 @@
         "alt": "A polished design concept with pull request experience in Visual Studio.",
         "caption": "A polished design concept",
         "align": "below",
-        "text": "I created multiple design iterations to explore different approaches to the pull request experience. Each iteration focused on addressing specific pain points identified during user research, such as navigation, commenting, and merging workflows. I gathered feedback from users and stakeholders to refine the designs and ensure they met the needs of developers."
-      },
-      {
-        "type": "ImageGallery",
-        "images": [
-          {
-            "src": "/tba.webp",
-            "alt": "Pull request design iteration 1",
-            "caption": "Pull request design iteration 1"
-          }
-        ]
+        "text": "To find answers, I created multiple design iterations to explore different approaches. Each iteration focused on addressing specific pain points identified during user research and concept development. I gathered feedback from internal and external users and stakeholders to refine the designs and  ensure they met the needs of developers. I also validated the designs with the engineering team for further ideation, transparency, buy in, and to ensure implementation feasibility."
       },
       {
         "type": "ImageSection",
         "title": "Final Design and Phased Rollout",
-        "image": "/project-7/pullrequest-featured.webp",
+        "image": "/project-7/final-create.webp",
         "alt": "The design mocup showing the final pull request experience in Visual Studio.",
-        "caption": "Final design",
+        "caption": "Create pull request layout UI for contextual pull request creation.",
         "align": "below",
-        "text": "The final design consisted of... "
+        "text": "The final design consisted of following key features: \n\n • Create pull requests directly from Visual Studio. \n• Review code changes with syntax highlighting and inline comments. \n• Approve or request changes to pull requests. \n• View pull request details, including author information, status, and related work items.\n\n The feature was rolled out in phases starting with features that addressed the most critical pull requests author needs and gradually adding more advanced features based on user feedback and priorities."
+      },
+      {
+        "type": "ImageSection",
+        "title": "",
+        "image": "/project-7/final-contained.webp",
+        "alt": "The design mocup showing the final pull request experience in Visual Studio.",
+        "caption": "Contained layout for code review and quick pull request scans.",
+        "align": "below",
+        "text": ""
+      },
+      {
+        "type": "ImageSection",
+        "title": "",
+        "image": "/project-7/final-full.webp",
+        "alt": "The design mocup showing the final pull request experience in Visual Studio.",
+        "caption": "Full screen layout for efficient code fixes and full language server support.",
+        "align": "below",
+        "text": ""
       }
     ]
   }
