@@ -439,7 +439,7 @@
     "id": 7,
     "slug": "pull-requests-in-visual-studio", 
     "title": "Pull Requests in Visual Studio - Design Process Showcase", 
-    "categories": ["UX Design", "User Research", "AI"],
+    "categories": ["UX Design", "User Research"],
     "description": "I led the design of complex UI from the initial concepts to the final implementation to find the optimal solution for code review in Visual Studio IDE.", 
     "thumbnail": "/project-7/thumb-pr.webp",
     "show": true,
@@ -457,7 +457,7 @@
       {
         "type": "TextSection",
         "title": "User Research",
-        "text": "I started with competitive analysis and benchmarking the user flows in existing experiences. At the same time I wrote and collected customer and problem hypothesis and created some lo-fidelity wireframes to support design communications, user research and spark the discussion with our customers."
+        "text": "I started with a competitive analysis and benchmarking the core user flows in existing experiences. At the same time I collected customer and problem hypotheses to be validated. I created some lo-fidelity wireframes to support design communications, user research and spark the discussion with our customers."
       },
       {
         "type": "ImageGallery",
@@ -477,7 +477,7 @@
       {
         "type": "TextSection",
         "title": "",
-        "text": "We interviewed developers from various backgrounds and experience levels to understand their pain points, needs, and preferences when it comes to code review and collaboration. My partner product manager conducted the actual interviews while I focused on synthesizing the findings and identifying key themes and insights."
+        "text": "My partner program manager and researcher interviewed developers from various backgrounds and experience levels to understand their pain points, needs, and preferences when it comes to code review and collaboration. We then together synthesized the findings and identified key themes and insights."
       },
       {
         "type": "ImageSection",
@@ -486,7 +486,7 @@
         "alt": "Affinity diagram showing user research insights.",
         "caption": "Affinity diagram showing user research insights.",
         "align": "below",
-        "text": "Key findings from user research highlighted the need for seamless integration, efficient navigation, and robust collaboration features within the IDE. Developers expressed a desire for a streamlined workflow that minimizes context switching and enhances productivity during code reviews. \n\n_\"I want to take full advantage of the Visual Studio while reviewing or fixing issues in the PR”_ \n\n_“As an author I want to use the IDE to fix the PR comments.”_\n\n_“I want to have the PR open on a separate monitor while working on PR changes”_\""
+        "text": "Developers expressed a desire for a streamlined workflow that minimizes context switching and enhances productivity during code reviews. It became clear how the user role (author vs reviewer) defines which pull request features are the most relevant in the coding environment. \n\n Some user comments: \n\n_\"I want to create my pull requests in the IDE right after finishing my code”_\n\n_\"I want to take full advantage of the Visual Studio while reviewing or fixing issues in the PR”_ \n\n_“As an author I want to use the IDE to fix the PR comments.”_\n\n_“I want to have the PR open on a separate monitor while working on PR changes”_\""
       },
       {
         "type": "TextSection",
