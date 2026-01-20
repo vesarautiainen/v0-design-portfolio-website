@@ -477,7 +477,7 @@
       {
         "type": "TextSection",
         "title": "",
-        "text": "My partner program manager and researcher interviewed developers from various backgrounds and experience levels to understand their pain points, needs, and preferences when it comes to code review and collaboration. We then together synthesized the findings and identified key themes and insights."
+        "text": "My partner programs (kudos to Jessie Houghton and Taysser Gherfal) interviewed developers from various backgrounds and experience levels to understand their pain points, needs, and preferences when it comes to code review and collaboration. We then together synthesized the findings and identified key themes and insights."
       },
       {
         "type": "ImageSection",
@@ -490,8 +490,8 @@
       },
       {
         "type": "TextSection",
-        "title": "Open Questions and UX Challenges",
-        "text": "User testing provided answers to bigger questions and clarity to where to get started and what features to prioritize. Yet, the largest portion of the UI design work was still ahead and I had plenty of questions to find answers for: \n\n • Do we need to include all the pull request capabilities? If not what do we pick and why? \n • What is the MVP design and what is the Northstar design? How do we get seamlessly from one to another? \n• How to ensure that the selected design works consistently with the existing GitHub and Azure DevOps pull request experiences from iconography, language and UI elements perspective. \n• What exactly the coherent design looks like that works in two different products; Visual Studio Windows and Visual Studio Code. Where can the design differ?\n• What is the most preferred layout option(s) to support core user flows, how to provide the maximum amount of screen real estate for efficient code review, and how to best integrate all that to the existing version control UI?"
+        "title": "Key UX Challenges",
+        "text": "User testing helped answer foundational questions and clarify where to start and which features to prioritize. However, the majority of the UI design work still lay ahead, raising several key UX challenges: \n\n **Scope of pull request functionality:** \n Which pull request capabilities are essential, which can be deferred, and what criteria guide those decisions? \n\n**MVP vs. North Star vision:** \nWhat does the MVP design look like compared to the North Star experience, and how can the product evolve smoothly from one to the other?\n\n **Ecosystem consistency:** \nHow can the design align with existing GitHub and Azure DevOps pull request experiences—across iconography, terminology, and UI patterns—while still feeling native?\n\n **Cross-product coherence:** \n What does a coherent design look like across two different products—Visual Studio (Windows) and Visual Studio Code—and where should the experiences intentionally diverge? \n\n **Layout and screen real estate:** \n Which layout options best support core user flows, maximize screen space for efficient code review, and integrate cleanly with the existing version control UI?"
       },
       {
         "type": "ImageSection",
@@ -500,7 +500,7 @@
         "alt": "A polished design concept with pull request experience in Visual Studio.",
         "caption": "I started narrowing down the design options into 2-3 polished concepts.",
         "align": "below",
-        "text": "To find answers, I created multiple design iterations to explore different approaches. Each iteration focused on addressing specific pain points identified during user research and concept development. I gathered feedback from internal and external users and stakeholders to refine the designs and  ensure they met the needs of developers. I also validated the designs with the engineering team for further ideation, transparency, buy in, and to ensure implementation feasibility."
+        "text": "I created multiple design iterations to explore different approaches. Each iteration focused on addressing specific pain points identified during user research and concept development. I gathered feedback from internal and external users and stakeholders to refine the designs and  ensure they met the needs of developers. I also validated the designs with the engineering team for further ideation, transparency, buy in, and to ensure implementation feasibility."
       },
       {
         "type": "TextSection",
@@ -511,34 +511,44 @@
         "images": [
           {
             "src": "/project-7/toasts.webp",
-            "alt": "@todo: change this alt text",
-            "caption": "@todo: change this caption"
+            "alt": "Toast notifications providing contextual information during coding flow.",
+            "caption": "Toast notifications could to provide status information and contextual quick actions."
           },
           {
             "src": "/project-7/status-section.webp",
-            "alt": "@todo: change this alt text",
-            "caption": "@todo: change this caption"
+            "alt": "Top section of the details panel showing overall PR status and key information.",
+            "caption": "Top section of the details panel could provide overall PR status and key information that is easily accessible."
           },
           {
             "src": "/project-7/tabbed-nav.webp",
-            "alt": "@todo: change this alt text",
-            "caption": "@todo: change this caption"
+            "alt": "Tabbed navigation to switch between different PR views.",
+            "caption": "Tabbed navigation to switch between different PR views was considered."
           },
           {
             "src": "/project-7/info-notifications.webp",
-            "alt": "@todo: change this alt text",
-            "caption": "@todo: change this caption"
+            "alt": "Infobar notifications providing non-intrusive information and quick actions.",
+            "caption": "Infobar notifications to provide non-intrusive information and quick actions."
+          },
+          {
+            "src": "/project-7/creation-finished.webp",
+            "alt": "Pull request creation finished state.",
+            "caption": "Pull request creation finished state."
+          },
+          {
+            "src": "/project-7/preview.webp",
+            "alt": "Ability to maximize the pull request details panel and Markdown preview are important when writing more complex descriptions.",
+            "caption": "Ability to maximize the pull request details panel and Markdown preview are important when writing more complex descriptions."
           }
         ]
       },
       {
         "type": "ImageSection",
-        "title": "Final Design and Phased Rollout",
+        "title": "Final Design",
         "image": "/project-7/final-create.webp",
         "alt": "The design mocup showing the final pull request experience in Visual Studio.",
         "caption": "Create pull request layout UI for contextual pull request creation.",
         "align": "below",
-        "text": "The final Northstar design focused on making the author flows as seamless as possible: \n\n• Create pull request whenever needed directly from Visual Studio.  \n• Quickly scan the status of your pull requests and see if there are any review requests. \n• Add and review others' comments quickly without checking out the pull request branch. \n• Approve and complete pull requests. \n• Take full advantage of Visual Studio and rich language server features when fixing comments and iterating on the pull request code."
+        "text": "The final Northstar design focused especially on improving the pull request authors efficiency and powering them with tools that reduce context switching and make flows as seamless as possible. Here some high-level screenshots from the final design documentation giving and idea of top-level architecture:"
       },
       {
         "type": "ImageSection",
@@ -560,7 +570,7 @@
       },
       {
         "type": "TextSection",
-        "text": "This large feature set was designed so that phased rollout was possible without need for redesigns and wasted code. Rollout started with features that addressed the most critical pull requests author needs and gradually added more advanced features based on user feedback and priorities."
+        "text": "The feature set was designed with scalability in mind, enabling a phased rollout from MVP to a more advanced experience without rework. Early releases focused on core pull request author workflows, while subsequent iterations introduced advanced features informed by user feedback and prioritization."
       }
     ]
   }
