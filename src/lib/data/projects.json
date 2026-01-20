@@ -498,9 +498,38 @@
         "title": "Design Iterations",
         "image": "/project-7/polished-concept.webp",
         "alt": "A polished design concept with pull request experience in Visual Studio.",
-        "caption": "A polished design concept",
+        "caption": "I started narrowing down the design options into 2-3 polished concepts.",
         "align": "below",
         "text": "To find answers, I created multiple design iterations to explore different approaches. Each iteration focused on addressing specific pain points identified during user research and concept development. I gathered feedback from internal and external users and stakeholders to refine the designs and  ensure they met the needs of developers. I also validated the designs with the engineering team for further ideation, transparency, buy in, and to ensure implementation feasibility."
+      },
+      {
+        "type": "TextSection",
+        "text": "There were many design details that needed to be figured out along the way:"
+      },
+      {
+        "type": "ImageGallery",
+        "images": [
+          {
+            "src": "/project-7/toasts.webp",
+            "alt": "@todo: change this alt text",
+            "caption": "@todo: change this caption"
+          },
+          {
+            "src": "/project-7/status-section.webp",
+            "alt": "@todo: change this alt text",
+            "caption": "@todo: change this caption"
+          },
+          {
+            "src": "/project-7/tabbed-nav.webp",
+            "alt": "@todo: change this alt text",
+            "caption": "@todo: change this caption"
+          },
+          {
+            "src": "/project-7/info-notifications.webp",
+            "alt": "@todo: change this alt text",
+            "caption": "@todo: change this caption"
+          }
+        ]
       },
       {
         "type": "ImageSection",
@@ -509,7 +538,7 @@
         "alt": "The design mocup showing the final pull request experience in Visual Studio.",
         "caption": "Create pull request layout UI for contextual pull request creation.",
         "align": "below",
-        "text": "The final design consisted of following key features: \n\n • Create pull requests directly from Visual Studio. \n• Review code changes with syntax highlighting and inline comments. \n• Approve or request changes to pull requests. \n• View pull request details, including author information, status, and related work items.\n\n The feature was rolled out in phases starting with features that addressed the most critical pull requests author needs and gradually adding more advanced features based on user feedback and priorities."
+        "text": "The final Northstar design focused on making the author flows as seamless as possible: \n\n• Create pull request whenever needed directly from Visual Studio.  \n• Quickly scan the status of your pull requests and see if there are any review requests. \n• Add and review others' comments quickly without checking out the pull request branch. \n• Approve and complete pull requests. \n• Take full advantage of Visual Studio and rich language server features when fixing comments and iterating on the pull request code."
       },
       {
         "type": "ImageSection",
@@ -528,6 +557,10 @@
         "caption": "Full screen layout for efficient code fixes and full language server support.",
         "align": "below",
         "text": ""
+      },
+      {
+        "type": "TextSection",
+        "text": "This large feature set was designed so that phased rollout was possible without need for redesigns and wasted code. Rollout started with features that addressed the most critical pull requests author needs and gradually added more advanced features based on user feedback and priorities."
       }
     ]
   }
