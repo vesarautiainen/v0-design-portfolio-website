@@ -183,7 +183,7 @@
     "description": "Designing Copilot AI integrations across developer tools",
     "thumbnail": "/project-3/Featured-VS-Copilot.webp",
     "show": true,
-    "featured": false,
+    "featured": true,
     "featured_image": "/project-3/Featured-VS-Copilot.webp",
     "year": 2025,
     "role": "Principal Designer",
@@ -276,11 +276,11 @@
   {
     "id": 4,
     "slug": "visual-studio-new-git-experience",
-    "title": "Visual Studio Version Control UX Redesign",
-    "categories": ["UX Design", "User Research", "Prototyping"],
+    "title": "Git Version Control UX Redesign",
+    "categories": ["UX Design", "User Research"],
     "description": "Designing a new Git version control UX for Visual Studio to enhance developer productivity and collaboration.",
     "thumbnail": "/project-4/thumb.png",
-    "show": true,
+    "show": false,
     "featured": false,
     "featured_image": "/project-4/featured.webp",
     "year": 2020,
@@ -300,51 +300,68 @@
         "alt": "Version control interface with multiple issues highlighted.",
         "caption": "Multiple problems identified in the existing version control interface.",
         "align": "right",
-        "text": "Team Explorer was the UI that hosted the version control features. While many users were used to that UI it suffered from discoverability and usability issues that became obvious in our customer interviews and user surveys. Some of the key problems were:\n\n • Poor discoverability of key features especially for new users.\n • Lack of support for modern Git workflows.\n • UI didn't follow UX guidelines but instead used some anti-patterns.\n • Inconsistent terminology and iconography compared to other Git tools.\n"
+        "text": "Version control features were hosted in Team Explorer tool window UI. While many users were used to that UI, it suffered from discoverability and usability issues that became obvious in our customer interviews and user surveys. Some of the key issues were:\n\n • Poor discoverability of the whole window and its key features especially for new Git users.\n • Lack of support for modern Git workflows.\n • The UI didn't follow the guidelines. Instead it introduced some anti-patterns.\n • Inconsistent terminology and iconography compared to other Git tools.\n • Complex navigation system and mental model and deep information hierarchy."
       },
       {
         "type": "TextSection",
         "title": "User Research and Key Findings",
-        "text": "Together with program managers and researchers, we conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control system. Key findings highlighted the need for clearer visual cues, simplified workflows, and better integration with other development tools."
+        "text": "Together with program managers and researchers, we conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control UX. \n\nWe wanted to understand how developers use Git in their daily workflows, what challenges they face, and what features they value the most. Very quickly it became clear that users needed just a very focused sub-set of features during their coding time (inner-loop) that should be easy to access and use without breaking their coding flow."
       },
       {
         "type": "ImageGallery",
         "images": [
           {
             "src": "/project-4/card-sorting.webp",
-            "alt": "@todo: change this alt text",
-            "caption": "@todo: change this caption"
+            "alt": "Card sorting exercise with user feedback notes.",
+            "caption": "Card sorting exercise to understand user mental models and organize version control features logically."  
           },
           {
             "src": "/project-4/affinity.webp",
-            "alt": "@todo: change this alt text",
-            "caption": "@todo: change this caption"
+            "alt": "Affinity diagramming with user research data.",
+            "caption": "Sensemaking with affinity diagramming to identify key themes."
           },
           {
             "src": "/project-4/table.webp",
-            "alt": "@todo: change this alt text",
-            "caption": "@todo: change this caption"
+            "alt": "Table with organized user research insights.",
+            "caption": "Version control commands and features organized in 2 dimensions based on the gathered data."
           }
         ]
       },
       {
         "type": "TextSection",
         "title": "Guiding Design Principles",
-        "text": "The scope of version control feature was very large. I drove the effort to define clear design principles to guide the redesign process and to frame the decision making process with stakeholders:\n\n **Build trust and confidence**\nThrough predictable, transparent, and reliable interactions. \n\n **Make system status always visible** \nUsers should never guess what’s happening or what changed. \n\n **Protect focus and flow** \nMinimize context switching and support fast, lightweight inner-loop actions. \n\n **Enable effortless discovery in context**\nSurface features naturally as part of the workflow.\n\n**Support intuitive, end-to-end workflows**\nAlign the experience with users’ mental models from start to finish. "
+        "text": "The scope of version control feature was very large. I drove the effort to define clear design principles to guide the redesign process and to frame the decision making process with stakeholders:\n\n **1. Build trust and confidence**\nThrough predictable, transparent, and reliable interactions. \n\n **2. Make system status always visible** \nUsers should never guess what’s happening or what changed. \n\n **3. Protect focus and flow** \nMinimize context switching and support fast, lightweight inner-loop actions. \n\n **4. Enable effortless discovery in context**\nSurface features naturally as part of the workflow.\n\n**5. Stay true to Git**\nPrefer native Git terminology and its default behavior."
       },
       {
         "type": "ImageSection",
-        "title": "\"On the Side\" Experience",
+        "title": "Git Changes Tool Window",
         "image": "/project-4/on-the-side.webp",
-        "alt": "@todo: change this alt text",
-        "caption": "Inner-loop (coding time) experience sits always readily \"on the side\" of the main coding UI providing quick access to the most common version control tasks without breaking the coding flow.",
+        "alt": "A design mockup of the Git Changes tool window UI.",
+        "caption": "Git Changes \"on the side\" tool window UI.",
         "align": "below",
-        "text": "Lorem ipsum"
+        "text": "This tool window UI sits always readily \"on the side\" of the main coding UI providing quick access to the most common version control tasks without breaking the coding flow. Its main purpose is to support fast commit and sync operations during the inner-loop coding time."
       },
       {
         "type": "TextSection",
-        "title": "Git Graph Tags",
-        "text": "A video of a prototype illustrating how the Git history graph tags behave and scale when the table column width varies. This prototype was done in Figma and was part of developer hand off."
+        "text": "One of the biggest design challenges was to decide what to add and what to left out from this UI to keep it simple and focused. As a designer, I was very protective and opinionated about keeping this UI minimalistic and only with the most essential features."
+      },
+      {
+        "type": "ImageSection",
+        "title": "Git Repository window",
+        "image": "/project-4/git-repository.webp",
+        "alt": "A design mockup of the Git Repository window UI.",
+        "caption": "Git Repository window provides the \"focused experience\"",
+        "align": "below",
+        "text": "Git Repository window (aka Full Screen Experience) provides a comprehensive view to the repository status and allows users to perform all version control tasks in one place."
+      },
+      {
+        "type": "TextSection",
+        "text": "With this UI the main challenge comes from the high-density information layout. One single window needs to support a wide variety of use cases and workflows while keeping the UI understandable and usable. The multi-panel layout with collapse, expand, resize, and detach capabilities offered needed flexibility to users to customize the UI based on their needs."
+      },
+      {
+        "type": "TextSection",
+        "title": "Design Detail - Git Graph Tags",
+        "text": "This video illustrates how the Git history graph tags behave and scale when the table column width varies. This prototype was done in Figma and was part of developer hand off."
       },
       {
         "type": "EmbeddedVideo",
@@ -353,8 +370,13 @@
       },
       {
         "type": "TextSection",
-        "title": "Web appearance",
-        "text": "The New Git Experience (Youtube): https://www.youtube.com/watch?v=ZiQ2LXtAJ6I"
+        "title": "Impact",
+        "text": "The updated UX was widely embraced and we got lots of positive feedback. Understandably, whenever you change the existing experience you will hear objections and negative feedback too. What was great from the future design perspective, the new UX architecture provided us a scalable structure and reusable UI elements that we could build on top so adding any missing version control functionality became easier.\n\n[The New Git Experience (YouTube)](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I)"
+      },
+      {
+        "type": "TextSection",
+        "title": "Key Learnings",
+        "text": "The version control was by far the largest feature set I ever worked on during my time at Microsoft. Here some of my key learnings when it comes to designing for developer tools in general:\n\n **Seek for diverse feedback**\n• People's brains are wired differently. Don't assume that what makes sense to you always makes sense for others. \n\n**Embrace complexity**\n• Learning 2 \n\n**Prioritize usability over minimalism or aesthetics**\n• Something about high-density UI. \n\n**Design for scalability and flexibility**\n• Learning \n\n**Good design needs to be implementable**\n• Learning 5 \n\n**Communications is crucial**\n• Async collaboraition. \n• Prototypes \n\n**Take advantage of your design tool capabilities**\n• Use and update the design systems. If one does not exist, create your own. \n• Quick (but detailed and precise) prototypes are great for design validation and engineering handoff. \n• Take the time to make every (starting from the tiniest) component scalable and reusable. This pays off later.\n • Keep your design files organized and understandable for others (and for yourself later). \n • Avoid copying designs to multiple places. Rather refer to your main design source. Design file should be the source of thuth."
       }
     ]
   },
@@ -387,8 +409,8 @@
         "images": [
           {
             "src": "/project-5/sketch.webp",
-            "alt": "Design mockup 1 showing the new indicator interactions.",
-            "caption": "Design mockup 1 showing the new indicator interactions."
+            "alt": "A paper and pen sketch of the final version before moving to digital design tools.",
+            "caption": "A paper and pen sketch of the final version before moving to digital design tools."
           },
           {
             "src": "/project-5/variations.webp",
@@ -398,7 +420,7 @@
           {
             "src": "/project-5/spec.webp",
             "alt": "Design mockup 3 showing the new indicator interactions.",
-            "caption": "Design mockup 3 showing the new indicator interactions."
+            "caption": "Design documentation specifying the final design details for engineering handoff."
           }
         ]
       },

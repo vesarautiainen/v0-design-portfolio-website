@@ -34,6 +34,9 @@
 
 <section class="px-6 md:px-12 py-20 max-w-6xl mx-auto">
 	<h1 class="text-4xl md:text-5xl font-bold mb-12">Projects</h1>
+	<p class="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl">
+		Explore a curated selection of my design projects, case studies, and prototypes. Each project highlights my approach to solving real-world problems through thoughtful design, research, and innovative development.
+	</p>
 
 	<!-- Filter Buttons -->
 	<div class="flex flex-wrap gap-3 mb-12">

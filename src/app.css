@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@theme {
+@theme {	
 	--color-background: #1f1f1f;
 	--color-foreground: #ffffff;
 	--color-muted: #2a2a2a;
@@ -29,4 +29,13 @@
 	.prose p {
 		@apply text-foreground leading-relaxed;
 	}
+}
+
+p a {
+  color: #69A9DF; /* or your brand color */
+  transition: color 0.1s;
+}
+p a:hover {
+  color: #69A9DF;
+  text-decoration: underline;
 }
