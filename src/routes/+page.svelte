@@ -16,7 +16,9 @@
 	// 	isLoading = false;
 	// });
 
-	$: featuredProjects = projects.filter(p => p.featured === true && p.show === true);
+	$: featuredProjects = projects
+		.filter(p => p.featured === true && p.show === true)
+		.sort((a, b) => a.id - b.id);
 </script>
 
 

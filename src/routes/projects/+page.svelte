@@ -15,9 +15,11 @@
 	// 	isLoading = false;
 	// });
 
+	// Sort projects by Id ascending (change to descending if needed)
+	$: sortedProjects = [...projects].sort((a, b) => a.id - b.id);
 	$: filteredProjects = filter === 'all'
-		? projects.filter(p => p.show)
-		: projects.filter(p =>
+		? sortedProjects.filter(p => p.show)
+		: sortedProjects.filter(p =>
 			p.show &&
 			(Array.isArray(p.categories)
 				? p.categories.includes(filter)

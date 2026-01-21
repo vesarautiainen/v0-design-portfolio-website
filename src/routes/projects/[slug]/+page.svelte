@@ -66,13 +66,13 @@
 		} else {
 			carouselItems = [];
 		}
-		// Set prev_project and next_project based on id
+		// Set prev_project and next_project based on orderId
 		if (project) {
 			// filter only shown projects
 			const shownProjects = projects.filter(p => p.show);
-			// Sort projects by id
-			const sortedProjects = [...shownProjects].sort((a, b) => a.id - b.id);
-			const currentIndex = sortedProjects.findIndex(p => p.id === project.id);
+			// Sort projects by orderId
+			const sortedProjects = [...shownProjects].sort((a, b) => a.orderId - b.orderId);
+			const currentIndex = sortedProjects.findIndex(p => p.orderId === project.orderId);
 
 			const prev = currentIndex > 0 ? sortedProjects[currentIndex - 1] : null;
 			const next = currentIndex < sortedProjects.length - 1 ? sortedProjects[currentIndex + 1] : null;
