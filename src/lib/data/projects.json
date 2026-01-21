@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 6,
     "slug": "ubuntu-application-switcher",
     "title": "Ubuntu Application Switcher",
     "categories": ["UX Design", "Prototyping", "UI Development", "Tooling"],
@@ -76,7 +76,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "slug": "accessible-change-indicators",
     "title": "Accessible Version Control Change Indicators",
     "categories": ["UX Design", "Accessibility"],
@@ -176,7 +176,7 @@
     ] 
   },
   {
-    "id": 3,
+    "id": 1,
     "slug": "visual-studio-copilot-extenders",
     "title": "Visual Studio Copilot Integrations",
     "categories": ["UX Design", "AI", "Prototyping"],
@@ -279,7 +279,7 @@
     "title": "Visual Studio Version Control UX Redesign",
     "categories": ["UX Design", "User Research", "Prototyping"],
     "description": "Designing a new Git version control UX for Visual Studio to enhance developer productivity and collaboration.",
-    "thumbnail": "/project-4/thumb.webp",
+    "thumbnail": "/project-4/thumb.png",
     "show": true,
     "featured": false,
     "featured_image": "/project-4/featured.webp",
@@ -296,25 +296,50 @@
       {
         "type": "ImageSection",
         "title": "UX Problem",
-        "image": "/tba.webp",
+        "image": "/project-4/teamexplorer.webp",
         "alt": "Version control interface with multiple issues highlighted.",
         "caption": "Multiple problems identified in the existing version control interface.",
         "align": "right",
-        "text": "The version control interface in Visual Studio had several usability issues that hindered developers' productivity. Key problems included unclear status indicators, a cluttered layout, and inefficient workflows for staging and committing changes."
+        "text": "Team Explorer was the UI that hosted the version control features. While many users were used to that UI it suffered from discoverability and usability issues that became obvious in our customer interviews and user surveys. Some of the key problems were:\n\n • Poor discoverability of key features especially for new users.\n • Lack of support for modern Git workflows.\n • UI didn't follow UX guidelines but instead used some anti-patterns.\n • Inconsistent terminology and iconography compared to other Git tools.\n"
       },
       {
         "type": "TextSection",
-        "title": "UX Process",
-        "text": "• I created design principles to guide the redesign process and to frame the decision making process with stakeholders.\n •"
+        "title": "User Research and Key Findings",
+        "text": "Together with program managers and researchers, we conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control system. Key findings highlighted the need for clearer visual cues, simplified workflows, and better integration with other development tools."
+      },
+      {
+        "type": "ImageGallery",
+        "images": [
+          {
+            "src": "/project-4/card-sorting.webp",
+            "alt": "@todo: change this alt text",
+            "caption": "@todo: change this caption"
+          },
+          {
+            "src": "/project-4/affinity.webp",
+            "alt": "@todo: change this alt text",
+            "caption": "@todo: change this caption"
+          },
+          {
+            "src": "/project-4/table.webp",
+            "alt": "@todo: change this alt text",
+            "caption": "@todo: change this caption"
+          }
+        ]
+      },
+      {
+        "type": "TextSection",
+        "title": "Guiding Design Principles",
+        "text": "The scope of version control feature was very large. I drove the effort to define clear design principles to guide the redesign process and to frame the decision making process with stakeholders:\n\n **Build trust and confidence**\nThrough predictable, transparent, and reliable interactions. \n\n **Make system status always visible** \nUsers should never guess what’s happening or what changed. \n\n **Protect focus and flow** \nMinimize context switching and support fast, lightweight inner-loop actions. \n\n **Enable effortless discovery in context**\nSurface features naturally as part of the workflow.\n\n**Support intuitive, end-to-end workflows**\nAlign the experience with users’ mental models from start to finish. "
       },
       {
         "type": "ImageSection",
-        "title": "Research Findings",
-        "image": "/tba.webp",
-        "alt": "Affinity diagram showing user research insights.",
-        "caption": "Affinity diagram showing user research insights.",
-        "align": "left",
-        "text": "Together with program managers and researchers, we conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control system. Key findings highlighted the need for clearer visual cues, simplified workflows, and better integration with other development tools."
+        "title": "\"On the Side\" Experience",
+        "image": "/project-4/on-the-side.webp",
+        "alt": "@todo: change this alt text",
+        "caption": "Inner-loop (coding time) experience sits always readily \"on the side\" of the main coding UI providing quick access to the most common version control tasks without breaking the coding flow.",
+        "align": "below",
+        "text": "Lorem ipsum"
       },
       {
         "type": "TextSection",
@@ -334,7 +359,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 7,
     "slug": "ubuntu-indicators",
     "title": "Ubuntu Touch Indicators", 
     "categories": ["Prototyping", "UX Design", "Tooling", "UI Development"],
@@ -390,7 +415,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 5,
     "slug": "screenreader-plugin-for-figma",
     "title": "Figma Plugin - Screen Reader Tool",
     "categories": ["Tooling", "Accessibility", "UI Development"],
@@ -436,7 +461,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 2,
     "slug": "pull-requests-in-visual-studio", 
     "title": "Pull Requests in Visual Studio - Design Process Showcase", 
     "categories": ["UX Design", "User Research"],
@@ -450,8 +475,12 @@
     "client": "Microsoft Corporation",
     "content":[
       {
-        "type": "TextSection",
+        "type": "ImageSection",
         "title": "The Objective",
+        "image": "/project-7/about.webp",
+        "alt": "An image representing pull request flow in general.",
+        "caption": "I created this image to help communicate the concept of pull requests to stakeholders and users unfamiliar with the term.",
+        "align": "below",
         "text": "A pull request (PR) is a collaborative tool used in version control systems like Git to propose and discuss changes to a codebase. Developers create pull requests to request that their changes be reviewed and merged into the main codebase by other team members. \n\nVisual Studio developer environment lacked all pull request capabilities and the feature was one of the highest request items among the community. \n\nMy task was to design a seamless pull request experience within Visual Studio IDE, enabling developers to efficiently review, comment on, fix comments, and merge code changes without leaving their development environment."
       },
       {
