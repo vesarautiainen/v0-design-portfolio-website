@@ -5,7 +5,7 @@
 	let mobileMenuOpen = $state(false);
 
 	const navItems = [
-		{ label: 'Work', href: '/projects' },
+		{ label: 'Projects', href: '/projects' },
 		//{ label: 'About', href: `/about` }
 	];
 

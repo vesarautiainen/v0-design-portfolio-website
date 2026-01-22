@@ -26,7 +26,7 @@
 						Home
 					</a>
 					<a href="projects" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
-						Work
+						Projects
 					</a>
 					<!-- <a href="about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						About
