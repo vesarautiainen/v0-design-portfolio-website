@@ -280,7 +280,7 @@
     "categories": ["UX Design", "User Research"],
     "description": "Designing a new Git version control UX for Visual Studio to enhance developer productivity and collaboration.",
     "thumbnail": "/project-4/thumb.png",
-    "show": false,
+    "show": true,
     "featured": false,
     "featured_image": "/project-4/featured.webp",
     "year": 2020,
@@ -290,7 +290,7 @@
       {
         "type": "TextSection",
         "title": "Project Overview",
-        "text": "Git is the most used version control system in the world. Developers use it to manage their code changes and collaborate with other developers. Visual Studio IDE had an existing Git experience that was outdated and not user-friendly. I led the redesign effort to create make it more intuitive, efficient, and accessible for all developers."
+        "text": "Git is the most used version control system in the world. Developers use it to manage their code changes and collaborate with other developers. Visual Studio IDE (Integrated Development Environment) had a Git experience that was outdated and not user-friendly. I led the redesign effort to make it more intuitive, efficient, and accessible for all developers."
       },
       
       {
@@ -300,12 +300,12 @@
         "alt": "Version control interface with multiple issues highlighted.",
         "caption": "Multiple problems identified in the existing version control interface.",
         "align": "right",
-        "text": "Version control features were hosted in Team Explorer tool window UI. While many users were used to that UI, it suffered from discoverability and usability issues that became obvious in our customer interviews and user surveys. Some of the key issues were:\n\n • Poor discoverability of the whole window and its key features especially for new Git users.\n • Lack of support for modern Git workflows.\n • The UI didn't follow the guidelines. Instead it introduced some anti-patterns.\n • Inconsistent terminology and iconography compared to other Git tools.\n • Complex navigation system and mental model and deep information hierarchy."
+        "text": "Version control features were hosted in Team Explorer tool window UI. While many users old were used to that UI, it suffered from discoverability and usability issues that became obvious in our customer interviews and user surveys. Some of the key issues were:\n\n • Poor discoverability of the window and its key features especially for new Git users.\n • Lack of modern Git workflow support.\n • The UI didn't follow the UX guidelines. Instead it introduced some anti-patterns.\n • Inconsistent terminology and iconography compared to other Git tools.\n • Deep information hierarchy introduced complex navigation system and broken mental model."
       },
       {
         "type": "TextSection",
         "title": "User Research and Key Findings",
-        "text": "Together with program managers and researchers, we conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control UX. \n\nWe wanted to understand how developers use Git in their daily workflows, what challenges they face, and what features they value the most. Very quickly it became clear that users needed just a very focused sub-set of features during their coding time (inner-loop) that should be easy to access and use without breaking their coding flow."
+        "text": "With my assistance my partner program managers and researchers (kudos to Taysser Gherfal, Pratik Nadagouda, and Karl Melder) conducted user interviews and usability tests to gather insights into developers' pain points with the existing version control UX. We wanted to understand how developers use Git in their daily workflows, what challenges they face, and what features they value the most."
       },
       {
         "type": "ImageGallery",
@@ -329,17 +329,21 @@
       },
       {
         "type": "TextSection",
+        "text": "In our research it became clear that users needed just a very focused sub-set of features during their coding time (inner-loop) that should be easy to access and use without breaking their coding flow. On the other hand, there was a need for a more comprehensive and detailed version control UI that could support more complex workflows and use cases (outer-loop)."
+      },
+      {
+        "type": "TextSection",
         "title": "Guiding Design Principles",
         "text": "The scope of version control feature was very large. I drove the effort to define clear design principles to guide the redesign process and to frame the decision making process with stakeholders:\n\n **1. Build trust and confidence**\nThrough predictable, transparent, and reliable interactions. \n\n **2. Make system status always visible** \nUsers should never guess what’s happening or what changed. \n\n **3. Protect focus and flow** \nMinimize context switching and support fast, lightweight inner-loop actions. \n\n **4. Enable effortless discovery in context**\nSurface features naturally as part of the workflow.\n\n**5. Stay true to Git**\nPrefer native Git terminology and its default behavior."
       },
       {
         "type": "ImageSection",
-        "title": "Git Changes Tool Window",
+        "title": "Git Changes Tool Window (inner-loop experience)",
         "image": "/project-4/on-the-side.webp",
         "alt": "A design mockup of the Git Changes tool window UI.",
         "caption": "Git Changes \"on the side\" tool window UI.",
         "align": "below",
-        "text": "This tool window UI sits always readily \"on the side\" of the main coding UI providing quick access to the most common version control tasks without breaking the coding flow. Its main purpose is to support fast commit and sync operations during the inner-loop coding time."
+        "text": "This the final design of the coding time experience. This tool window UI sits always readily \"on the side\" of the main coding UI providing quick access to the most common version control tasks without breaking the coding flow. Its main purpose is to support fast commit and sync operations during the inner-loop coding time."
       },
       {
         "type": "TextSection",
@@ -347,12 +351,12 @@
       },
       {
         "type": "ImageSection",
-        "title": "Git Repository window",
+        "title": "Git Repository window (outer-loop experience)",
         "image": "/project-4/git-repository.webp",
         "alt": "A design mockup of the Git Repository window UI.",
         "caption": "Git Repository window provides the \"focused experience\"",
         "align": "below",
-        "text": "Git Repository window (aka Full Screen Experience) provides a comprehensive view to the repository status and allows users to perform all version control tasks in one place."
+        "text": "Git Repository window provides a comprehensive view to the repository status and allows users to perform all version control tasks in one place. User can open this window when they need to perform more complex workflows that require more context and information."
       },
       {
         "type": "TextSection",
@@ -361,7 +365,7 @@
       {
         "type": "TextSection",
         "title": "Design Detail - Git Graph Tags",
-        "text": "This video illustrates how the Git history graph tags behave and scale when the table column width varies. This prototype was done in Figma and was part of developer hand off."
+        "text": "Complex UI like Git Repository window is full of design details that needed to be carefully considered and specified. This video illustrates how the Git history graph tags behave and scale when the table column width varies. This prototype was done in Figma and was naturally part of developer hand off."
       },
       {
         "type": "EmbeddedVideo",
@@ -371,12 +375,12 @@
       {
         "type": "TextSection",
         "title": "Impact",
-        "text": "The updated UX was widely embraced and we got lots of positive feedback. Understandably, whenever you change the existing experience you will hear objections and negative feedback too. What was great from the future design perspective, the new UX architecture provided us a scalable structure and reusable UI elements that we could build on top so adding any missing version control functionality became easier.\n\n[The New Git Experience (YouTube)](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I)"
+        "text": "The updated UX was widely embraced and received strong positive feedback. From a forward-looking design perspective, the new architecture gave us reusable UI elements and a scalable structure that was easy to extend. This made it possible to start with a smaller MVP and gradually add new features in future releases.\n\n[The New Git Experience (YouTube)](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I)"
       },
       {
         "type": "TextSection",
         "title": "Key Learnings",
-        "text": "The version control was by far the largest feature set I ever worked on during my time at Microsoft. Here some of my key learnings when it comes to designing for developer tools in general:\n\n **Seek for diverse feedback**\n• People's brains are wired differently. Don't assume that what makes sense to you always makes sense for others. \n\n**Embrace complexity**\n• Learning 2 \n\n**Prioritize usability over minimalism or aesthetics**\n• Something about high-density UI. \n\n**Design for scalability and flexibility**\n• Learning \n\n**Good design needs to be implementable**\n• Learning 5 \n\n**Communications is crucial**\n• Async collaboraition. \n• Prototypes \n\n**Take advantage of your design tool capabilities**\n• Use and update the design systems. If one does not exist, create your own. \n• Quick (but detailed and precise) prototypes are great for design validation and engineering handoff. \n• Take the time to make every (starting from the tiniest) component scalable and reusable. This pays off later.\n • Keep your design files organized and understandable for others (and for yourself later). \n • Avoid copying designs to multiple places. Rather refer to your main design source. Design file should be the source of thuth."
+        "text": "The new version control UI was by far the largest feature set I worked on during my time at Microsoft. It taught me a lot about designing for developer tools, and here are some of the key lessons I took away.\n\n **Seek diverse feedback**\n• People’s brains are wired differently. Don’t assume that what makes sense to you will make sense to others. \n• Share openly. Gathering feedback from users, peer designers, stakeholders, and developers (who are also users) is invaluable. \n\n**Know the product—and who you’re designing for**\n• Sometimes prioritizing usability over minimalism or aesthetics is the right choice; other times, the opposite is true. For example: Developers are learned to love their hi-density UIs. \n• Take advantage of the qualitative and quantitative data you have. \n\n**Be brave and critical**\n• Design should have a point of view and clear reasoning behind it, even if loosely held. \n• Removing features is a form of design—sometimes more important than adding new ones. \n• Not all data or feedback is correct or reason to pivot. Often there is no single “right” answer. \n\n**Good design needs to be implementable**\n• Make your designs scalable and modular from the beginning. \n• Consider business goals and time constraints.\n• Take technical constraints into account early. \n\n**Communication is crucial**\n• Learn different ways to communicate ideas and designs effectively, both asynchronously and in real time. \n• Clear and precise communication helps avoid misunderstandings. \n\n**Take advantage of your design tool capabilities**\n• Use design systems and keep them updated. If one doesn’t exist, create your own. \n• Combine quick, rough prototypes with more precise ones for validation and engineering handoff. \n• Invest time in making components scalable and reusable—it pays off later. \n • Keep design files organized and understandable for others (and your future self). \n • Maintain a single source of truth—the design file."
       }
     ]
   },
