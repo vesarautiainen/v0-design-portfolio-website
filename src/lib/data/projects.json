@@ -76,7 +76,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "slug": "accessible-change-indicators",
     "title": "Accessible Version Control Change Indicators",
     "categories": ["UX Design", "Accessibility"],
@@ -170,8 +170,8 @@
       },
       {
       "type": "TextSection",
-      "title": "Links",
-      "text": "Blog post about the line staging features by my PM partner: https://devblogs.microsoft.com/visualstudio/line-staging-interactive-staging/"
+      "title": "Related",
+      "text": "The line staging feature that I designed as well uses the new style code change indicators. Blog post by my partner program manager: [Interactive Line Staging](https://devblogs.microsoft.com/visualstudio/line-staging-interactive-staging/)"
       }
     ] 
   },
@@ -180,7 +180,7 @@
     "slug": "visual-studio-copilot-extenders",
     "title": "Visual Studio Copilot Integrations",
     "categories": ["UX Design", "AI", "Prototyping"],
-    "description": "Designing Copilot AI integrations across developer tools",
+    "description": "Designing Copilot AI integrations across developer tools.",
     "thumbnail": "/project-3/Featured-VS-Copilot.webp",
     "show": true,
     "featured": true,
@@ -274,11 +274,11 @@
     ] 
   },
   {
-    "id": 4,
+    "id": 3,
     "slug": "visual-studio-new-git-experience",
     "title": "Git Version Control UX Redesign",
     "categories": ["UX Design", "User Research", "Prototyping"],
-    "description": "Designing a new Git version control UX for Visual Studio to enhance developer productivity and collaboration.",
+    "description": "Design journey to enhance developer productivity and collaboration with a new Git version control UX for Visual Studio.",
     "thumbnail": "/project-4/thumb.png",
     "show": true,
     "featured": false,
