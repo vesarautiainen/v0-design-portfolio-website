@@ -197,21 +197,21 @@
       {
         "type": "TextSection",
         "title": "UX Challenge",
-        "text": "Key challenges included:\n\n• The most product teams worked in silos and lacked of understanding the high-value end-to-end scenarios.\n• Fragmented experiences and inconsistent UI elements and language confused users and hindered productivity.\n• Introducing new powerful AI functionality on high-density UI can be challenging so that it's discoverable and understandable but doesn't mess with user's muscle memory. \n\n I collaborated closely with product managers, engineers, and other Copilot designers to identify pain points find opportunities for improvement and break silos between different teams."
+        "text": "Key challenges included:\n\n• The product teams worked in silos and lacked of understanding the high-value end-to-end scenarios.\n• Different experiences were fragmented and inconsistent UI elements and language confused users and hindered productivity.\n• How to introduce new powerful AI functionality on high-density UI so that it's discoverable and understandable but doesn't mess with user's muscle memory? \n\n I collaborated closely with product managers, engineers, and other Copilot designers to identify user pain points, uncover opportunities where AI could address those pain points, and break down silos between teams."
       },
       {
         "type": "ImageSection",
         "title": "Example: Editor - Rename Suggestions",
-        "text": "• Provide AI suggestions automatically without blocking the underlying UI.\n• Allow users to opt out and turn off the suggestions permanently. \n• Prevent unnecessary AI costs by cancelling LLM (Large Language Model) call if the user starts typing.\n• Provide intuitive keyboard navigation for power users.\n• Maintain consistency with other Copilot integrations in Visual Studio.",
+        "text": "This small piece of AI integration was added to the editor to make rename task easier. It consists of several key features:\n\n • Provide AI suggestions automatically without blocking the underlying UI.\n• Allow users to opt out and turn off the suggestions permanently. \n• Prevent unnecessary AI costs by cancelling LLM (Large Language Model) call if the user starts typing.\n• Provide intuitive keyboard navigation for power users.\n• Maintain consistency with other Copilot integrations in Visual Studio.",
         "image": "/project-3/editor-rename-suggestions.gif",
         "alt": "Image showing Editor - Rename Suggestions in responsive layout.  ",
-        "caption": "Rename Suggestions prototype for engineering handoff.",
+        "caption": "Rename Suggestions prototype.",
         "align": "right"
       },
       {
         "type": "ImageSection",
         "title": "Example: Diagnostics - Visualizer",
-        "text": "With the updated UI user can write a natural language query and get relevant diagnostics data visualized directly in the code editor. This helps developers quickly understand and address issues in their code without needing to learn complex query languages or navigate through multiple tools.",
+        "text": "With the updated UI, users can write natural language queries and view relevant diagnostics data directly within the code editor. This helps developers quickly understand and address issues without needing to learn complex query languages or navigate multiple tools.",
         "image": "/project-3/diagnostics-visualizer.gif",
         "alt": "Alt text  ",
         "caption": "User can toggle on the AI prompt and refine the current expression with natural language instructions.",
@@ -225,7 +225,7 @@
       {
         "type": "ImageSection",
         "title": "UX Guidelines",
-        "text": "Copilot partner teams worked in silos which had resulted fragmented and inconsistent UXexperiences. I created UX guidelines: \n\n• Established a unified design language for Copilot integrations across Visual Studio.\n• Empowered teams to make informed design decisions without designer involvement.\n• Strengthened cross-team collaboration and end-to-end user experience.",
+        "text": "Copilot partner teams worked in silos which had resulted fragmented and inconsistent experiences. I created user experience (UX) guidelines: \n\n• Established a **unified design language** for Copilot integrations across Visual Studio.\n• Empowered teams to make informed **independent design decisions** without designer involvement.\n• Strengthened **cross-team collaboration** and end-to-end user experience.",
         "image": "/project-3/ux-guidelines.webp",
         "alt": "An image of the table of contents for the Copilot UX Guidelines document.",
         "caption": "Table of contents for the Copilot Partner UX Guidelines.",
@@ -242,7 +242,7 @@
           {
             "src": "/project-3/copilot-pr-description.webp",
             "alt": "Design mockup showing the flow of using Copilot PR Description.",
-            "caption": "Version Control - Copilot PR Description flow."
+            "caption": "Version Control - Copilot aided PR Description flow."
           },
           {
             "src": "/project-3/local-ai-review.webp",
@@ -252,7 +252,7 @@
           {
             "src": "/project-3/content-exclusion.webp",
             "alt": "Design file screenshot showing high-level view to content exclusion guidelines.",
-            "caption": "Content exclusion was larger cross-team AI design task where I managed to establish clear UX guidelines and communicate those across multiple teams."
+            "caption": "Content exclusion was larger cross-team AI design task where I established clear UX guidelines and communicated those across the teams."
           },
           {
             "src": "/project-3/doc-comments.gif",
@@ -277,7 +277,7 @@
     "id": 4,
     "slug": "visual-studio-new-git-experience",
     "title": "Git Version Control UX Redesign",
-    "categories": ["UX Design", "User Research"],
+    "categories": ["UX Design", "User Research", "Prototyping"],
     "description": "Designing a new Git version control UX for Visual Studio to enhance developer productivity and collaboration.",
     "thumbnail": "/project-4/thumb.png",
     "show": true,
