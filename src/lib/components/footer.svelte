@@ -35,7 +35,7 @@
 			</div>
 			<div>
 				<h3 class="font-bold mb-4">Email</h3>
-				<a href="mailto:hello@example.com" class="text-sm text-muted-foreground hover:text-foreground transition-colors">vrautiainen@gmail.com
+				<a href="mailto:vrautiainen@gmail.com" class="text-sm text-muted-foreground hover:text-foreground transition-colors">vrautiainen@gmail.com
 				</a>
 			</div>
 		</div>
