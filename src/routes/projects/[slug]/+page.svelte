@@ -71,8 +71,8 @@
 			// filter only shown projects
 			const shownProjects = projects.filter(p => p.show);
 			// Sort projects by orderId
-			const sortedProjects = [...shownProjects].sort((a, b) => a.orderId - b.orderId);
-			const currentIndex = sortedProjects.findIndex(p => p.orderId === project.orderId);
+			const sortedProjects = [...shownProjects].sort((a, b) => a.id - b.id);
+			const currentIndex = sortedProjects.findIndex(p => p.id === project.id);
 
 			const prev = currentIndex > 0 ? sortedProjects[currentIndex - 1] : null;
 			const next = currentIndex < sortedProjects.length - 1 ? sortedProjects[currentIndex + 1] : null;
