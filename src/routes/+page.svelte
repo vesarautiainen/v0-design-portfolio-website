@@ -28,7 +28,7 @@
 </svelte:head>
 
 <!-- Hero Section -->
-<section class="px-6 md:px-12 py-20 md:py-28 max-w-6xl mx-auto">
+<section class="px-6 md:px-12 py-20 md:py-20 max-w-6xl mx-auto">
 	<div class="space-y-12">
 		<h1 class="text-4xl md:text-6xl font-bold text-balance">
 			Hi, I'm Vesa — a Product Designer
