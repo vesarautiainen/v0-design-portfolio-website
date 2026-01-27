@@ -16,12 +16,12 @@
       {
         "type": "TextSection",
         "title": "The UX Challenge",
-        "text": "Application switching is one of the most often performed tasks in both mobile and desktop operating systems. Hence it needs to be a fluid and frictionless interaction. For this project the main requirements were: \n\n• Full convergence: the same switcher would need to work on phone, tablet and PC desktop. \n• Needs to handle both windowed and non-windowed environments. \n• Multiple workspace support needs to be taken into account. \n• Needs to support all available input types: touch, pointer and keyboard. \n• Single code base approach (stakeholder and engineering requirement). \n• The existing design relying on stacked cards needs to be taken into consideration. \n\n **The main challenges:**\n • How to create an adapting layout that transforms andcovers all use cases.\n • Creating consistent set of transitions and animations which would also be delightful to use and reinforce user’s metal model of the system.\n • Application window size can be arbitrary and vary between the windows simultaneously on the screen.\n • Horizontal space is limited but the design needs to scale to support 0-N application and 0-N workspaces."
+        "text": "Application switching is one of the most often performed tasks in both mobile and desktop operating systems. Hence, it needs to be a fluid and frictionless interaction. For this project, the main requirements were: \n\n• Full convergence: the same switcher would need to work on phone, tablet, and PC desktop. \n• Needs to handle both windowed and non-windowed environments. \n• Multiple workspace support needs to be taken into account. \n• Needs to support all available input types: touch, pointer, and keyboard. \n• Single code base approach (stakeholder and engineering requirement). \n• The existing design relying on stacked cards needs to be taken into consideration. \n\n **The main challenges:**\n • How to create an adapting layout that transforms and covers all use cases.\n • Creating a consistent set of transitions and animations which would also be delightful to use and reinforce the user’s mental model of the system.\n • Application window size can be arbitrary and vary between the windows simultaneously on the screen.\n • Horizontal space is limited but the design needs to scale to support 0–N applications and 0–N workspaces."
       },
       {
         "type": "TextSection",
         "title": "The UX Approach",
-        "text": "Guiding design principles that helped in the design process:\n\n • Prefer subtle and unobtrusive animations to provide quick and consistent feeling across the use cases.\n• Utilise the screen real estate as well as possible and avoid overflow behind the screen edges.\n• Provide easily identifiable application info (card + icon + label).\n• Aim for full convergence: Same visual appearance, functionality and interactions across form factors, devices and input types.\n• Re-use existing Ubuntu design and visual patterns.\n\nI wrote an interactive prototype to help in design.This turned out\nto be invaluable approach that helped out to identify and solve many corner use cases. The prototype also worked as partial documentation for developers."
+        "text": "Guiding design principles that helped in the design process:\n\n • Prefer subtle and unobtrusive animations to provide quick and consistent feeling across the use cases.\n• Utilize the screen real estate as well as possible and avoid overflow behind the screen edges.\n• Provide easily identifiable application info (card + icon + label).\n• Aim for full convergence: Same visual appearance, functionality, and interactions across form factors, devices, and input types.\n• Re-use existing Ubuntu design and visual patterns.\n\nI wrote an interactive prototype to help in design. This turned out to be an invaluable approach that helped identify and solve many edge cases. The prototype also worked as partial documentation for developers."
       },
      {
         "type": "ImageGallery",
@@ -56,22 +56,22 @@
       {
         "type": "EmbeddedVideo",
         "url": "https://vimeo.com/1140845194",
-        "caption": "I developed and heavily used this interactive prototype during the design process to validate and refine the user experience and find parameters for layout,animations and transitions."
+        "caption": "I developed and heavily used this interactive prototype during the design process to validate and refine the user experience and find parameters for layout, animations, and transitions."
       },
       {
         "type": "ImageSection",
         "title": "The final design",
         "image": "/project-1/convergence.webp",
         "alt": "An example image from the project.",
-        "caption": "The same design and codebase works across phone, tablet and desktop form factors.",
+        "caption": "The same design and codebase works across phone, tablet, and desktop form factors.",
         "align": "below",
-        "text": "The result layout is fully responsive that automatically adjusts its element sizes, margins and visibility while maintaining balanced look and feel. Application windows are cropped in to a square shape with suitable cropping algorithm and application icon and label were added to maximise application identifiability. The final design supports following functionality: \n\n • Application switching. \n• Closing applications \n• Moving applications between workspaces \n• Closing, reordering and merging workspaces \n• Focusing on to another workspace. "
+        "text": "The resulting layout is fully responsive and automatically adjusts its element sizes, margins, and visibility while maintaining a balanced look and feel. Application windows are cropped into a square shape with a suitable cropping algorithm, and the application icon and label were added to maximize application identifiability. The final design supports the following functionality: \n\n • Application switching. \n• Closing applications \n• Moving applications between workspaces \n• Closing, reordering, and merging workspaces \n• Focusing on another workspace. "
       },
       
       {
         "type": "TextSection",
         "title": "Impact",
-        "text": "The converged switcher was part of Ubuntu 10.16 release as a default Unity 8 application switcher. \nThe final implementation is essential part of a product that got awarded: 🏆 **Orange Award for Converged Computing** at Mobile World Congress 2017."
+        "text": "The converged switcher was part of the Ubuntu 10.16 release as the default Unity 8 application switcher. \nThe final implementation is an essential part of a product that was awarded: 🏆 **Orange Award for Converged Computing** at Mobile World Congress 2017."
       }
     ]
   },
@@ -92,7 +92,7 @@
       {
         "type": "TextSection",
         "title": "Project Overview",
-        "text": "The code change indicators mark lines that have been modified, added, or deleted in the code file. The existing indicators in Visual Studio's version control system were not accessible for all users, and didn't provide the change type information being inconsistent with for example VS Code. I led the redesign work to ensure they were accessible and usable by all developers, regardless of their visual abilities."      
+        "text": "The code change indicators mark lines that have been modified, added, or deleted in the code file. The existing indicators in Visual Studio's version control system were not accessible for all users, and didn't provide change type information, being inconsistent with, for example, VS Code. I led the redesign work to ensure they were accessible and usable by all developers, regardless of their visual abilities."      
       },
       {
         "type": "ImageSection",
@@ -116,7 +116,7 @@
       {
         "type": "TextSection",
         "title": "Design Iterations",
-        "text": "We went throught multiple design iterations to explore different visual representations. I tested various shapes, patterns, and color combinations to ensure that the indicators were easily distinguishable by all users. I also considered the overall aesthetics and how the new indicators would fit within the existing Visual Studio interface."
+        "text": "We went through multiple design iterations to explore different visual representations. I tested various shapes, patterns, and color combinations to ensure that the indicators were easily distinguishable by all users. I also considered the overall aesthetics and how the new indicators would fit within the existing Visual Studio interface."
       },
       {
         "type": "ImageGallery",
@@ -124,7 +124,7 @@
           {
             "src": "/project-2/iterationX-textures.webp",
             "alt": "Change indicator design iteration exploring various texture patterns to represent different change types.",
-            "caption": "I explored varions texture patterns to represent different change types."
+            "caption": "I explored various texture patterns to represent different change types."
           },
           {
             "src": "/project-2/iterationX-signs.webp",
@@ -139,14 +139,14 @@
           {
             "src": "/project-2/iteration4-staging-information.webp",
             "alt": "Design iteration 4 was too complex.",
-            "caption": "Iteration 4 was one of the most complex designs as it showed both change type and staging information. This was concluded too much information for users to process at once."            
+            "caption": "Iteration 4 was one of the most complex designs as it showed both change type and staging information. This was concluded to be too much information for users to process at once."
           }
         ]
       },
       {
         "type": "TextSection",
         "title": "Final Design and Impact",
-        "text": "The final design was successfully implemented in Visual Studio 2022 version 17.3 and later. The design met the all the set objectives and received positive feedback from users, particularly those with visual impairments. \n\n I submitted a patent application which was accepted and I received a patent award for the design work. \n\nSome users still preferred the old design due to familiarity, and we provided an option to switch back to the previous design if desired. Even then, the yellow and green color values were updated for better contrast and accessibility."
+        "text": "The final design was successfully implemented in Visual Studio 2022 version 17.3 and later. The design met all the set objectives and received positive feedback from users, particularly those with visual impairments. \n\n I submitted a patent application which was accepted and I received a patent award for the design work. \n\nSome users still preferred the old design due to familiarity, and we provided an option to switch back to the previous design if desired. Even then, the yellow and green color values were updated for better contrast and accessibility."
       },
       {
         "type": "ImageGallery",
@@ -192,12 +192,12 @@
       {
         "type": "TextSection",
         "title": "Project Overview",
-        "text": "I drove the design work for GitHub Copilot integrations across toolsets throughout Visual Studio. I crafted optimised end-to-end experiences that boost developer productivity while navigating competing constraints across different feature teams, and aligning numerous stakeholders."
+        "text": "I drove the design work for GitHub Copilot integrations across toolsets throughout Visual Studio. I crafted optimized end-to-end experiences that boost developer productivity while navigating competing constraints across different feature teams, and aligning numerous stakeholders."
       },
       {
         "type": "TextSection",
         "title": "UX Challenge",
-        "text": "Key challenges included:\n\n• The product teams worked in silos and lacked of understanding the high-value end-to-end scenarios.\n• Different experiences were fragmented and inconsistent UI elements and language confused users and hindered productivity.\n• How to introduce new powerful AI functionality on high-density UI so that it's discoverable and understandable but doesn't mess with user's muscle memory? \n\n I collaborated closely with product managers, engineers, and other Copilot designers to identify user pain points, uncover opportunities where AI could address those pain points, and break down silos between teams."
+        "text": "Key challenges included:\n\n• The product teams worked in silos and lacked understanding of the high-value end-to-end scenarios.\n• Different experiences were fragmented, and inconsistent UI elements and language confused users and hindered productivity.\n• How to introduce new powerful AI functionality on high-density UI so that it's discoverable and understandable but doesn't mess with users' muscle memory? \n\n I collaborated closely with product managers, engineers, and other Copilot designers to identify user pain points, uncover opportunities where AI could address those pain points, and break down silos between teams."
       },
       {
         "type": "ImageSection",
@@ -252,7 +252,7 @@
           {
             "src": "/project-3/content-exclusion.webp",
             "alt": "Design file screenshot showing high-level view to content exclusion guidelines.",
-            "caption": "Content exclusion was larger cross-team AI design task where I established clear UX guidelines and communicated those across the teams."
+            "caption": "Content exclusion was a larger cross-team AI design task where I established clear UX guidelines and communicated those across the teams."
           },
           {
             "src": "/project-3/doc-comments.gif",
@@ -267,7 +267,7 @@
           {
             "src": "/project-3/performance-profiler.webp",
             "alt": "Diagnostics Performance profiler feature design mockup.",
-            "caption": " A new diagnostics performance profiler launch page that provides AI recommended tools and allows natural language queries for finding relevant performance issues."
+            "caption": "A new diagnostics performance profiler launch page that provides AI-recommended tools and allows natural language queries for finding relevant performance issues."
           }
         ]
       }
@@ -401,7 +401,7 @@
       {
         "type": "TextSection",
         "title": "The UX Challenge",
-        "text": "User testing had showed that the existing Ubuntu Touch indicators were suffering from several usability issues. My task was to re-design indicators and to fix following problems:\n\n•  Users didn’t understand the connections between different UI elements.\n• Users struggled with the swipe down gesture and didn’t get the targeted menu open.\n• Users struggled navigating between open menus.\n• The current design didn’t handle overflow situation when there are more indicators than available space."
+        "text": "User testing had shown that the existing Ubuntu Touch indicators were suffering from several usability issues. My task was to re-design indicators and to fix the following problems:\n\n•  Users didn’t understand the connections between different UI elements.\n• Users struggled with the swipe down gesture and didn’t get the targeted menu open.\n• Users struggled navigating between open menus.\n• The current design didn’t handle overflow situations when there are more indicators than available space."
       },
       {
         "type": "TextSection",
@@ -436,7 +436,7 @@
       {
         "type": "TextSection",
         "title": "The UX Impact",
-        "text": "The new design retained all the good functionality from the old indicators while fixing all usability issues. The new indicator design was user tested multiple times and the results have been significantly better. It fullfilled the stakeholder expectations and also got great feedback from the actual Ubuntu phone users."
+        "text": "The new design retained all the good functionality from the old indicators while fixing all usability issues. The new indicator design was user tested multiple times and the results have been significantly better. It fulfilled the stakeholder expectations and also got great feedback from the actual Ubuntu phone users."
       }
     ]
   },
@@ -462,7 +462,7 @@
       {
         "type": "TextSection",
         "title": "The Solution",
-        "text": "I wanted to design a better process and tool for accessible communication of designs to all workshop participants. I developed a plugin for the Figma design software I was using, which acted as a connecting tissue between the design tool and the operating system’s (macOS or Windows) screen reader (Narrator, VoiceOver, NVDA, JAWS, etc). The tool allowed designer to specify screenreader anouncements (ARIA live regions) that were spoken aloud while the design was being interacted with."
+        "text": "I wanted to design a better process and tool for accessible communication of designs to all workshop participants. I developed a plugin for the Figma design software I was using, which acted as a connecting tissue between the design tool and the operating system’s (macOS or Windows) screen reader (Narrator, VoiceOver, NVDA, JAWS, etc). The tool allowed designers to specify screen reader announcements (ARIA live regions) that were spoken aloud while the design was being interacted with."
       },
       {
         "type": "ImageGallery",
