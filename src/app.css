@@ -6,6 +6,9 @@
 	--color-muted: #f3f3f3;
 	--color-muted-foreground: #71717a;
 	--color-border: #e4e4e7;
+	--color-brand-accent: #4371B6;
+	--color-brand-accent-secondary: #69A9DF;
+	--color-brand-foreground: #f4f4f5;
 	--radius: 0.5rem;
 	--font-sans: 'Inter', system-ui, sans-serif;
 }

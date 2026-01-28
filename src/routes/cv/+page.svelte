@@ -12,7 +12,7 @@
   max-width: 600px;
   margin: 3rem auto;
   padding: 2rem;
-  background: var(--background);
+  background: var(--color-background);
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
   text-align: center;
@@ -21,14 +21,14 @@
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.75rem 2rem;
-  background: var(--primary);
-  color: var(--primary-foreground, #fff);
+  background: var(--color-brand-accent); /* use your brand accent */
+  color: var(--color-brand-foreground);  /* use your brand foreground */
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   transition: background 0.2s;
 }
 .download-btn:hover {
-  background: var(--primary-hover, #005bb5);
+  background: var(--color-brand-accent-secondary); /* use your secondary accent */
 }
 </style>
