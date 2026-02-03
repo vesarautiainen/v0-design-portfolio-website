@@ -3,7 +3,7 @@
 </script>
 
 <section class="cv-download">
-  <h1>You can download my CV as a PDF file:</h1>
+  <h1>You can download my resume as a PDF file:</h1>
   <a href="/vesarautiainen-cv.pdf" download class="download-btn">Download</a>
 </section>
 

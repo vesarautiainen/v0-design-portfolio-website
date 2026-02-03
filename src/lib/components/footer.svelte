@@ -29,7 +29,7 @@
 						Projects
 					</a>
 					<a href="cv" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
-						CV
+						Resume
 					</a>
 					<!-- <a href="about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
 						About
