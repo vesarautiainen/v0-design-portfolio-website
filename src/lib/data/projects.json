@@ -401,7 +401,7 @@
       {
         "type": "TextSection",
         "title": "The UX Challenge",
-        "text": "User testing had shown that the existing Ubuntu Touch indicators were suffering from several usability issues. My task was to re-design indicators and to fix the following problems:\n\n•  Users didn’t understand the connections between different UI elements.\n• Users struggled with the swipe down gesture and didn’t get the targeted menu open.\n• Users struggled navigating between open menus.\n• The current design didn’t handle overflow situations when there are more indicators than available space."
+        "text": "User testing had shown that the existing Ubuntu Touch indicators were suffering from several usability issues. My task was to redesign indicators and to fix the following problems:\n\n•  Users didn’t understand the connections between different UI elements.\n• Users struggled with the swipe down gesture and didn’t get the targeted menu open.\n• Users struggled navigating between open menus.\n• The current design didn’t handle overflow situations when there are more indicators than available space."
       },
       {
         "type": "TextSection",
