@@ -2,13 +2,13 @@
   // No JS needed for a simple download link
 </script>
 
-<section class="cv-download">
+<section class="resume-download">
   <h1>You can download my resume as a PDF file:</h1>
-  <a href="/vesarautiainen-cv.pdf" download class="download-btn">Download</a>
+  <a href="/vesarautiainen-resume.pdf" download class="download-btn">Download</a>
 </section>
 
 <style>
-.cv-download {
+.resume-download {
   max-width: 600px;
   margin: 3rem auto;
   padding: 2rem;
